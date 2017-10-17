@@ -1,0 +1,2892 @@
+[
+  {
+    "_index": "packets-2017-09-26",
+    "_type": "pcap_file",
+    "_score": null,
+    "_source": {
+      "layers": {
+        "frame": {
+          "frame.interface_id": "0",
+          "frame.encap_type": "1",
+          "frame.time": "Sep 26, 2017 00:47:32.772319444 CEST",
+          "frame.offset_shift": "0.000000000",
+          "frame.time_epoch": "1506379652.772319444",
+          "frame.time_delta": "0.000374960",
+          "frame.time_delta_displayed": "0.000000000",
+          "frame.time_relative": "17.139804128",
+          "frame.number": "1068",
+          "frame.len": "667",
+          "frame.cap_len": "667",
+          "frame.marked": "0",
+          "frame.ignored": "0",
+          "frame.protocols": "eth:ethertype:ip:tcp:http",
+          "frame.coloring_rule.name": "HTTP",
+          "frame.coloring_rule.string": "http || tcp.port == 80 || http2"
+        },
+        "eth": {
+          "eth.dst": "00:00:00:00:00:00",
+          "eth.dst_tree": {
+            "eth.dst_resolved": "00:00:00_00:00:00",
+            "eth.addr": "00:00:00:00:00:00",
+            "eth.addr_resolved": "00:00:00_00:00:00",
+            "eth.lg": "0",
+            "eth.ig": "0"
+          },
+          "eth.src": "00:00:00:00:00:00",
+          "eth.src_tree": {
+            "eth.src_resolved": "00:00:00_00:00:00",
+            "eth.addr": "00:00:00:00:00:00",
+            "eth.addr_resolved": "00:00:00_00:00:00",
+            "eth.lg": "0",
+            "eth.ig": "0"
+          },
+          "eth.type": "0x00000800"
+        },
+        "ip": {
+          "ip.version": "4",
+          "ip.hdr_len": "20",
+          "ip.dsfield": "0x00000000",
+          "ip.dsfield_tree": {
+            "ip.dsfield.dscp": "0",
+            "ip.dsfield.ecn": "0"
+          },
+          "ip.len": "653",
+          "ip.id": "0x00000a83",
+          "ip.flags": "0x00000002",
+          "ip.flags_tree": {
+            "ip.flags.rb": "0",
+            "ip.flags.df": "1",
+            "ip.flags.mf": "0"
+          },
+          "ip.frag_offset": "0",
+          "ip.ttl": "64",
+          "ip.proto": "6",
+          "ip.checksum": "0x00002fe6",
+          "ip.checksum.status": "2",
+          "ip.src": "127.0.0.1",
+          "ip.addr": "127.0.0.1",
+          "ip.src_host": "127.0.0.1",
+          "ip.host": "127.0.0.1",
+          "ip.dst": "127.0.0.1",
+          "ip.addr": "127.0.0.1",
+          "ip.dst_host": "127.0.0.1",
+          "ip.host": "127.0.0.1",
+          "Source GeoIP: Unknown": "",
+          "Destination GeoIP: Unknown": ""
+        },
+        "tcp": {
+          "tcp.srcport": "35984",
+          "tcp.dstport": "80",
+          "tcp.port": "35984",
+          "tcp.port": "80",
+          "tcp.stream": "132",
+          "tcp.len": "601",
+          "tcp.seq": "1",
+          "tcp.nxtseq": "602",
+          "tcp.ack": "1",
+          "tcp.hdr_len": "32",
+          "tcp.flags": "0x00000018",
+          "tcp.flags_tree": {
+            "tcp.flags.res": "0",
+            "tcp.flags.ns": "0",
+            "tcp.flags.cwr": "0",
+            "tcp.flags.ecn": "0",
+            "tcp.flags.urg": "0",
+            "tcp.flags.ack": "1",
+            "tcp.flags.push": "1",
+            "tcp.flags.reset": "0",
+            "tcp.flags.syn": "0",
+            "tcp.flags.fin": "0",
+            "tcp.flags.str": "\u00c2\u00b7\u00c2\u00b7\u00c2\u00b7\u00c2\u00b7\u00c2\u00b7\u00c2\u00b7\u00c2\u00b7AP\u00c2\u00b7\u00c2\u00b7\u00c2\u00b7"
+          },
+          "tcp.window_size_value": "342",
+          "tcp.window_size": "43776",
+          "tcp.window_size_scalefactor": "128",
+          "tcp.checksum": "0x00000082",
+          "tcp.checksum.status": "2",
+          "tcp.urgent_pointer": "0",
+          "tcp.options": "01:01:08:0a:da:b0:f0:e1:da:b0:f0:e1",
+          "tcp.options_tree": {
+            "No-Operation (NOP)": {
+              "tcp.options.type": "1",
+              "tcp.options.type_tree": {
+                "tcp.options.type.copy": "0",
+                "tcp.options.type.class": "0",
+                "tcp.options.type.number": "1"
+              }
+            },
+            "No-Operation (NOP)": {
+              "tcp.options.type": "1",
+              "tcp.options.type_tree": {
+                "tcp.options.type.copy": "0",
+                "tcp.options.type.class": "0",
+                "tcp.options.type.number": "1"
+              }
+            },
+            "Timestamps: TSval 3669029089, TSecr 3669029089": {
+              "tcp.option_kind": "8",
+              "tcp.option_len": "10",
+              "tcp.options.timestamp.tsval": "3669029089",
+              "tcp.options.timestamp.tsecr": "3669029089"
+            }
+          },
+          "tcp.analysis": {
+            "tcp.analysis.initial_rtt": "0.000053847",
+            "tcp.analysis.bytes_in_flight": "601",
+            "tcp.analysis.push_bytes_sent": "601"
+          }
+        },
+        "http": {
+          "GET \/ HTTP\/1.1\\r\\n": {
+            "_ws.expert": {
+              "http.chat": "",
+              "_ws.expert.message": "GET \/ HTTP\/1.1\\r\\n",
+              "_ws.expert.severity": "2097152",
+              "_ws.expert.group": "33554432"
+            },
+            "http.request.method": "GET",
+            "http.request.uri": "\/",
+            "http.request.version": "HTTP\/1.1"
+          },
+          "http.host": "test.com",
+          "http.request.line": "Host: test.com\r\n",
+          "http.connection": "keep-alive",
+          "http.request.line": "Connection: keep-alive\r\n",
+          "http.request.line": "Pragma: no-cache\r\n",
+          "http.cache_control": "no-cache",
+          "http.request.line": "Cache-Control: no-cache\r\n",
+          "http.request.line": "Upgrade-Insecure-Requests: 1\r\n",
+          "http.user_agent": "Mozilla\/5.0 (X11; Linux x86_64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/61.0.3163.100 Safari\/537.36",
+          "http.request.line": "User-Agent: Mozilla\/5.0 (X11; Linux x86_64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/61.0.3163.100 Safari\/537.36\r\n",
+          "http.accept": "text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/webp,image\/apng,*\/*;q=0.8",
+          "http.request.line": "Accept: text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/webp,image\/apng,*\/*;q=0.8\r\n",
+          "http.accept_encoding": "gzip, deflate",
+          "http.request.line": "Accept-Encoding: gzip, deflate\r\n",
+          "http.accept_language": "en-US,en;q=0.8",
+          "http.request.line": "Accept-Language: en-US,en;q=0.8\r\n",
+          "http.cookie": "intercom-id-n8ayu1h7=dae8b464-af34-422a-aec4-dd94cedb1330; CW-FirstTime=true; koa.sid=QE6NK3lGgTYw1wW5Fy1-LK9ZJLh7BFEf; koa.sid.sig=woV9r1s7EB6MmhYVpNz-Ln0kw-s",
+          "http.cookie_tree": {
+            "http.cookie_pair": "intercom-id-n8ayu1h7=dae8b464-af34-422a-aec4-dd94cedb1330",
+            "http.cookie_pair": "CW-FirstTime=true",
+            "http.cookie_pair": "koa.sid=QE6NK3lGgTYw1wW5Fy1-LK9ZJLh7BFEf",
+            "http.cookie_pair": "koa.sid.sig=woV9r1s7EB6MmhYVpNz-Ln0kw-s"
+          },
+          "http.request.line": "Cookie: intercom-id-n8ayu1h7=dae8b464-af34-422a-aec4-dd94cedb1330; CW-FirstTime=true; koa.sid=QE6NK3lGgTYw1wW5Fy1-LK9ZJLh7BFEf; koa.sid.sig=woV9r1s7EB6MmhYVpNz-Ln0kw-s\r\n",
+          "\\r\\n": "",
+          "http.request.full_uri": "http:\/\/test.com\/",
+          "http.request": "1",
+          "http.request_number": "1",
+          "http.response_in": "1084",
+          "http.next_request_in": "1098"
+        }
+      }
+    }
+  }
+  ,
+  {
+    "_index": "packets-2017-09-26",
+    "_type": "pcap_file",
+    "_score": null,
+    "_source": {
+      "layers": {
+        "frame": {
+          "frame.interface_id": "0",
+          "frame.encap_type": "1",
+          "frame.time": "Sep 26, 2017 00:47:32.839448628 CEST",
+          "frame.offset_shift": "0.000000000",
+          "frame.time_epoch": "1506379652.839448628",
+          "frame.time_delta": "0.030954636",
+          "frame.time_delta_displayed": "0.067129184",
+          "frame.time_relative": "17.206933312",
+          "frame.number": "1098",
+          "frame.len": "623",
+          "frame.cap_len": "623",
+          "frame.marked": "0",
+          "frame.ignored": "0",
+          "frame.protocols": "eth:ethertype:ip:tcp:http",
+          "frame.coloring_rule.name": "HTTP",
+          "frame.coloring_rule.string": "http || tcp.port == 80 || http2"
+        },
+        "eth": {
+          "eth.dst": "00:00:00:00:00:00",
+          "eth.dst_tree": {
+            "eth.dst_resolved": "00:00:00_00:00:00",
+            "eth.addr": "00:00:00:00:00:00",
+            "eth.addr_resolved": "00:00:00_00:00:00",
+            "eth.lg": "0",
+            "eth.ig": "0"
+          },
+          "eth.src": "00:00:00:00:00:00",
+          "eth.src_tree": {
+            "eth.src_resolved": "00:00:00_00:00:00",
+            "eth.addr": "00:00:00:00:00:00",
+            "eth.addr_resolved": "00:00:00_00:00:00",
+            "eth.lg": "0",
+            "eth.ig": "0"
+          },
+          "eth.type": "0x00000800"
+        },
+        "ip": {
+          "ip.version": "4",
+          "ip.hdr_len": "20",
+          "ip.dsfield": "0x00000000",
+          "ip.dsfield_tree": {
+            "ip.dsfield.dscp": "0",
+            "ip.dsfield.ecn": "0"
+          },
+          "ip.len": "609",
+          "ip.id": "0x00000a86",
+          "ip.flags": "0x00000002",
+          "ip.flags_tree": {
+            "ip.flags.rb": "0",
+            "ip.flags.df": "1",
+            "ip.flags.mf": "0"
+          },
+          "ip.frag_offset": "0",
+          "ip.ttl": "64",
+          "ip.proto": "6",
+          "ip.checksum": "0x0000300f",
+          "ip.checksum.status": "2",
+          "ip.src": "127.0.0.1",
+          "ip.addr": "127.0.0.1",
+          "ip.src_host": "127.0.0.1",
+          "ip.host": "127.0.0.1",
+          "ip.dst": "127.0.0.1",
+          "ip.addr": "127.0.0.1",
+          "ip.dst_host": "127.0.0.1",
+          "ip.host": "127.0.0.1",
+          "Source GeoIP: Unknown": "",
+          "Destination GeoIP: Unknown": ""
+        },
+        "tcp": {
+          "tcp.srcport": "35984",
+          "tcp.dstport": "80",
+          "tcp.port": "35984",
+          "tcp.port": "80",
+          "tcp.stream": "132",
+          "tcp.len": "557",
+          "tcp.seq": "602",
+          "tcp.nxtseq": "1159",
+          "tcp.ack": "4508",
+          "tcp.hdr_len": "32",
+          "tcp.flags": "0x00000018",
+          "tcp.flags_tree": {
+            "tcp.flags.res": "0",
+            "tcp.flags.ns": "0",
+            "tcp.flags.cwr": "0",
+            "tcp.flags.ecn": "0",
+            "tcp.flags.urg": "0",
+            "tcp.flags.ack": "1",
+            "tcp.flags.push": "1",
+            "tcp.flags.reset": "0",
+            "tcp.flags.syn": "0",
+            "tcp.flags.fin": "0",
+            "tcp.flags.str": "\u00c2\u00b7\u00c2\u00b7\u00c2\u00b7\u00c2\u00b7\u00c2\u00b7\u00c2\u00b7\u00c2\u00b7AP\u00c2\u00b7\u00c2\u00b7\u00c2\u00b7"
+          },
+          "tcp.window_size_value": "1365",
+          "tcp.window_size": "174720",
+          "tcp.window_size_scalefactor": "128",
+          "tcp.checksum": "0x00000056",
+          "tcp.checksum.status": "2",
+          "tcp.urgent_pointer": "0",
+          "tcp.options": "01:01:08:0a:da:b0:f0:f2:da:b0:f0:e3",
+          "tcp.options_tree": {
+            "No-Operation (NOP)": {
+              "tcp.options.type": "1",
+              "tcp.options.type_tree": {
+                "tcp.options.type.copy": "0",
+                "tcp.options.type.class": "0",
+                "tcp.options.type.number": "1"
+              }
+            },
+            "No-Operation (NOP)": {
+              "tcp.options.type": "1",
+              "tcp.options.type_tree": {
+                "tcp.options.type.copy": "0",
+                "tcp.options.type.class": "0",
+                "tcp.options.type.number": "1"
+              }
+            },
+            "Timestamps: TSval 3669029106, TSecr 3669029091": {
+              "tcp.option_kind": "8",
+              "tcp.option_len": "10",
+              "tcp.options.timestamp.tsval": "3669029106",
+              "tcp.options.timestamp.tsecr": "3669029091"
+            }
+          },
+          "tcp.analysis": {
+            "tcp.analysis.initial_rtt": "0.000053847",
+            "tcp.analysis.bytes_in_flight": "557",
+            "tcp.analysis.push_bytes_sent": "557"
+          }
+        },
+        "http": {
+          "GET \/static\/js\/bundle.js HTTP\/1.1\\r\\n": {
+            "_ws.expert": {
+              "http.chat": "",
+              "_ws.expert.message": "GET \/static\/js\/bundle.js HTTP\/1.1\\r\\n",
+              "_ws.expert.severity": "2097152",
+              "_ws.expert.group": "33554432"
+            },
+            "http.request.method": "GET",
+            "http.request.uri": "\/static\/js\/bundle.js",
+            "http.request.version": "HTTP\/1.1"
+          },
+          "http.host": "test.com",
+          "http.request.line": "Host: test.com\r\n",
+          "http.connection": "keep-alive",
+          "http.request.line": "Connection: keep-alive\r\n",
+          "http.request.line": "Pragma: no-cache\r\n",
+          "http.cache_control": "no-cache",
+          "http.request.line": "Cache-Control: no-cache\r\n",
+          "http.user_agent": "Mozilla\/5.0 (X11; Linux x86_64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/61.0.3163.100 Safari\/537.36",
+          "http.request.line": "User-Agent: Mozilla\/5.0 (X11; Linux x86_64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/61.0.3163.100 Safari\/537.36\r\n",
+          "http.accept": "*\/*",
+          "http.request.line": "Accept: *\/*\r\n",
+          "http.referer": "http:\/\/test.com\/",
+          "http.request.line": "Referer: http:\/\/test.com\/\r\n",
+          "http.accept_encoding": "gzip, deflate",
+          "http.request.line": "Accept-Encoding: gzip, deflate\r\n",
+          "http.accept_language": "en-US,en;q=0.8",
+          "http.request.line": "Accept-Language: en-US,en;q=0.8\r\n",
+          "http.cookie": "intercom-id-n8ayu1h7=dae8b464-af34-422a-aec4-dd94cedb1330; CW-FirstTime=true; koa.sid=QE6NK3lGgTYw1wW5Fy1-LK9ZJLh7BFEf; koa.sid.sig=woV9r1s7EB6MmhYVpNz-Ln0kw-s",
+          "http.cookie_tree": {
+            "http.cookie_pair": "intercom-id-n8ayu1h7=dae8b464-af34-422a-aec4-dd94cedb1330",
+            "http.cookie_pair": "CW-FirstTime=true",
+            "http.cookie_pair": "koa.sid=QE6NK3lGgTYw1wW5Fy1-LK9ZJLh7BFEf",
+            "http.cookie_pair": "koa.sid.sig=woV9r1s7EB6MmhYVpNz-Ln0kw-s"
+          },
+          "http.request.line": "Cookie: intercom-id-n8ayu1h7=dae8b464-af34-422a-aec4-dd94cedb1330; CW-FirstTime=true; koa.sid=QE6NK3lGgTYw1wW5Fy1-LK9ZJLh7BFEf; koa.sid.sig=woV9r1s7EB6MmhYVpNz-Ln0kw-s\r\n",
+          "\\r\\n": "",
+          "http.request.full_uri": "http:\/\/test.com\/static\/js\/bundle.js",
+          "http.request": "1",
+          "http.request_number": "2",
+          "http.prev_request_in": "1068",
+          "http.response_in": "1436",
+          "http.next_request_in": "1444"
+        }
+      }
+    }
+  }
+  ,
+  {
+    "_index": "packets-2017-09-26",
+    "_type": "pcap_file",
+    "_score": null,
+    "_source": {
+      "layers": {
+        "frame": {
+          "frame.interface_id": "0",
+          "frame.encap_type": "1",
+          "frame.time": "Sep 26, 2017 00:47:33.370973525 CEST",
+          "frame.offset_shift": "0.000000000",
+          "frame.time_epoch": "1506379653.370973525",
+          "frame.time_delta": "0.165635238",
+          "frame.time_delta_displayed": "0.531524897",
+          "frame.time_relative": "17.738458209",
+          "frame.number": "1444",
+          "frame.len": "547",
+          "frame.cap_len": "547",
+          "frame.marked": "0",
+          "frame.ignored": "0",
+          "frame.protocols": "eth:ethertype:ip:tcp:http",
+          "frame.coloring_rule.name": "HTTP",
+          "frame.coloring_rule.string": "http || tcp.port == 80 || http2"
+        },
+        "eth": {
+          "eth.dst": "00:00:00:00:00:00",
+          "eth.dst_tree": {
+            "eth.dst_resolved": "00:00:00_00:00:00",
+            "eth.addr": "00:00:00:00:00:00",
+            "eth.addr_resolved": "00:00:00_00:00:00",
+            "eth.lg": "0",
+            "eth.ig": "0"
+          },
+          "eth.src": "00:00:00:00:00:00",
+          "eth.src_tree": {
+            "eth.src_resolved": "00:00:00_00:00:00",
+            "eth.addr": "00:00:00:00:00:00",
+            "eth.addr_resolved": "00:00:00_00:00:00",
+            "eth.lg": "0",
+            "eth.ig": "0"
+          },
+          "eth.type": "0x00000800"
+        },
+        "ip": {
+          "ip.version": "4",
+          "ip.hdr_len": "20",
+          "ip.dsfield": "0x00000000",
+          "ip.dsfield_tree": {
+            "ip.dsfield.dscp": "0",
+            "ip.dsfield.ecn": "0"
+          },
+          "ip.len": "533",
+          "ip.id": "0x00000aca",
+          "ip.flags": "0x00000002",
+          "ip.flags_tree": {
+            "ip.flags.rb": "0",
+            "ip.flags.df": "1",
+            "ip.flags.mf": "0"
+          },
+          "ip.frag_offset": "0",
+          "ip.ttl": "64",
+          "ip.proto": "6",
+          "ip.checksum": "0x00003017",
+          "ip.checksum.status": "2",
+          "ip.src": "127.0.0.1",
+          "ip.addr": "127.0.0.1",
+          "ip.src_host": "127.0.0.1",
+          "ip.host": "127.0.0.1",
+          "ip.dst": "127.0.0.1",
+          "ip.addr": "127.0.0.1",
+          "ip.dst_host": "127.0.0.1",
+          "ip.host": "127.0.0.1",
+          "Source GeoIP: Unknown": "",
+          "Destination GeoIP: Unknown": ""
+        },
+        "tcp": {
+          "tcp.srcport": "35984",
+          "tcp.dstport": "80",
+          "tcp.port": "35984",
+          "tcp.port": "80",
+          "tcp.stream": "132",
+          "tcp.len": "481",
+          "tcp.seq": "1159",
+          "tcp.nxtseq": "1640",
+          "tcp.ack": "1210752",
+          "tcp.hdr_len": "32",
+          "tcp.flags": "0x00000018",
+          "tcp.flags_tree": {
+            "tcp.flags.res": "0",
+            "tcp.flags.ns": "0",
+            "tcp.flags.cwr": "0",
+            "tcp.flags.ecn": "0",
+            "tcp.flags.urg": "0",
+            "tcp.flags.ack": "1",
+            "tcp.flags.push": "1",
+            "tcp.flags.reset": "0",
+            "tcp.flags.syn": "0",
+            "tcp.flags.fin": "0",
+            "tcp.flags.str": "\u00c2\u00b7\u00c2\u00b7\u00c2\u00b7\u00c2\u00b7\u00c2\u00b7\u00c2\u00b7\u00c2\u00b7AP\u00c2\u00b7\u00c2\u00b7\u00c2\u00b7"
+          },
+          "tcp.window_size_value": "19446",
+          "tcp.window_size": "2489088",
+          "tcp.window_size_scalefactor": "128",
+          "tcp.checksum": "0x0000000a",
+          "tcp.checksum.status": "2",
+          "tcp.urgent_pointer": "0",
+          "tcp.options": "01:01:08:0a:da:b0:f1:77:da:b0:f1:35",
+          "tcp.options_tree": {
+            "No-Operation (NOP)": {
+              "tcp.options.type": "1",
+              "tcp.options.type_tree": {
+                "tcp.options.type.copy": "0",
+                "tcp.options.type.class": "0",
+                "tcp.options.type.number": "1"
+              }
+            },
+            "No-Operation (NOP)": {
+              "tcp.options.type": "1",
+              "tcp.options.type_tree": {
+                "tcp.options.type.copy": "0",
+                "tcp.options.type.class": "0",
+                "tcp.options.type.number": "1"
+              }
+            },
+            "Timestamps: TSval 3669029239, TSecr 3669029173": {
+              "tcp.option_kind": "8",
+              "tcp.option_len": "10",
+              "tcp.options.timestamp.tsval": "3669029239",
+              "tcp.options.timestamp.tsecr": "3669029173"
+            }
+          },
+          "tcp.analysis": {
+            "tcp.analysis.initial_rtt": "0.000053847",
+            "tcp.analysis.bytes_in_flight": "481",
+            "tcp.analysis.push_bytes_sent": "481"
+          }
+        },
+        "http": {
+          "GET \/static\/js\/bundle.js.map HTTP\/1.1\\r\\n": {
+            "_ws.expert": {
+              "http.chat": "",
+              "_ws.expert.message": "GET \/static\/js\/bundle.js.map HTTP\/1.1\\r\\n",
+              "_ws.expert.severity": "2097152",
+              "_ws.expert.group": "33554432"
+            },
+            "http.request.method": "GET",
+            "http.request.uri": "\/static\/js\/bundle.js.map",
+            "http.request.version": "HTTP\/1.1"
+          },
+          "http.host": "test.com",
+          "http.request.line": "Host: test.com\r\n",
+          "http.connection": "keep-alive",
+          "http.request.line": "Connection: keep-alive\r\n",
+          "http.cache_control": "no-cache",
+          "http.request.line": "Cache-Control: no-cache\r\n",
+          "http.user_agent": "Mozilla\/5.0 (X11; Linux x86_64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/61.0.3163.100 Safari\/537.36",
+          "http.request.line": "User-Agent: Mozilla\/5.0 (X11; Linux x86_64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/61.0.3163.100 Safari\/537.36\r\n",
+          "http.accept_encoding": "gzip, deflate",
+          "http.request.line": "Accept-Encoding: gzip, deflate\r\n",
+          "http.accept_language": "en-US,en;q=0.8",
+          "http.request.line": "Accept-Language: en-US,en;q=0.8\r\n",
+          "http.cookie": "intercom-id-n8ayu1h7=dae8b464-af34-422a-aec4-dd94cedb1330; CW-FirstTime=true; koa.sid=QE6NK3lGgTYw1wW5Fy1-LK9ZJLh7BFEf; koa.sid.sig=woV9r1s7EB6MmhYVpNz-Ln0kw-s",
+          "http.cookie_tree": {
+            "http.cookie_pair": "intercom-id-n8ayu1h7=dae8b464-af34-422a-aec4-dd94cedb1330",
+            "http.cookie_pair": "CW-FirstTime=true",
+            "http.cookie_pair": "koa.sid=QE6NK3lGgTYw1wW5Fy1-LK9ZJLh7BFEf",
+            "http.cookie_pair": "koa.sid.sig=woV9r1s7EB6MmhYVpNz-Ln0kw-s"
+          },
+          "http.request.line": "Cookie: intercom-id-n8ayu1h7=dae8b464-af34-422a-aec4-dd94cedb1330; CW-FirstTime=true; koa.sid=QE6NK3lGgTYw1wW5Fy1-LK9ZJLh7BFEf; koa.sid.sig=woV9r1s7EB6MmhYVpNz-Ln0kw-s\r\n",
+          "\\r\\n": "",
+          "http.request.full_uri": "http:\/\/test.com\/static\/js\/bundle.js.map",
+          "http.request": "1",
+          "http.request_number": "3",
+          "http.prev_request_in": "1098",
+          "http.response_in": "1906",
+          "http.next_request_in": "1917"
+        }
+      }
+    }
+  }
+  ,
+  {
+    "_index": "packets-2017-09-26",
+    "_type": "pcap_file",
+    "_score": null,
+    "_source": {
+      "layers": {
+        "frame": {
+          "frame.interface_id": "0",
+          "frame.encap_type": "1",
+          "frame.time": "Sep 26, 2017 00:47:33.553195982 CEST",
+          "frame.offset_shift": "0.000000000",
+          "frame.time_epoch": "1506379653.553195982",
+          "frame.time_delta": "0.000148583",
+          "frame.time_delta_displayed": "0.182222457",
+          "frame.time_relative": "17.920680666",
+          "frame.number": "1635",
+          "frame.len": "677",
+          "frame.cap_len": "677",
+          "frame.marked": "0",
+          "frame.ignored": "0",
+          "frame.protocols": "eth:ethertype:ip:tcp:http",
+          "frame.coloring_rule.name": "HTTP",
+          "frame.coloring_rule.string": "http || tcp.port == 80 || http2"
+        },
+        "eth": {
+          "eth.dst": "00:00:00:00:00:00",
+          "eth.dst_tree": {
+            "eth.dst_resolved": "00:00:00_00:00:00",
+            "eth.addr": "00:00:00:00:00:00",
+            "eth.addr_resolved": "00:00:00_00:00:00",
+            "eth.lg": "0",
+            "eth.ig": "0"
+          },
+          "eth.src": "00:00:00:00:00:00",
+          "eth.src_tree": {
+            "eth.src_resolved": "00:00:00_00:00:00",
+            "eth.addr": "00:00:00:00:00:00",
+            "eth.addr_resolved": "00:00:00_00:00:00",
+            "eth.lg": "0",
+            "eth.ig": "0"
+          },
+          "eth.type": "0x00000800"
+        },
+        "ip": {
+          "ip.version": "4",
+          "ip.hdr_len": "20",
+          "ip.dsfield": "0x00000000",
+          "ip.dsfield_tree": {
+            "ip.dsfield.dscp": "0",
+            "ip.dsfield.ecn": "0"
+          },
+          "ip.len": "663",
+          "ip.id": "0x00002d4f",
+          "ip.flags": "0x00000002",
+          "ip.flags_tree": {
+            "ip.flags.rb": "0",
+            "ip.flags.df": "1",
+            "ip.flags.mf": "0"
+          },
+          "ip.frag_offset": "0",
+          "ip.ttl": "64",
+          "ip.proto": "6",
+          "ip.checksum": "0x00000d10",
+          "ip.checksum.status": "2",
+          "ip.src": "127.0.0.1",
+          "ip.addr": "127.0.0.1",
+          "ip.src_host": "127.0.0.1",
+          "ip.host": "127.0.0.1",
+          "ip.dst": "127.0.0.1",
+          "ip.addr": "127.0.0.1",
+          "ip.dst_host": "127.0.0.1",
+          "ip.host": "127.0.0.1",
+          "Source GeoIP: Unknown": "",
+          "Destination GeoIP: Unknown": ""
+        },
+        "tcp": {
+          "tcp.srcport": "35992",
+          "tcp.dstport": "80",
+          "tcp.port": "35992",
+          "tcp.port": "80",
+          "tcp.stream": "137",
+          "tcp.len": "611",
+          "tcp.seq": "1",
+          "tcp.nxtseq": "612",
+          "tcp.ack": "1",
+          "tcp.hdr_len": "32",
+          "tcp.flags": "0x00000018",
+          "tcp.flags_tree": {
+            "tcp.flags.res": "0",
+            "tcp.flags.ns": "0",
+            "tcp.flags.cwr": "0",
+            "tcp.flags.ecn": "0",
+            "tcp.flags.urg": "0",
+            "tcp.flags.ack": "1",
+            "tcp.flags.push": "1",
+            "tcp.flags.reset": "0",
+            "tcp.flags.syn": "0",
+            "tcp.flags.fin": "0",
+            "tcp.flags.str": "\u00c2\u00b7\u00c2\u00b7\u00c2\u00b7\u00c2\u00b7\u00c2\u00b7\u00c2\u00b7\u00c2\u00b7AP\u00c2\u00b7\u00c2\u00b7\u00c2\u00b7"
+          },
+          "tcp.window_size_value": "342",
+          "tcp.window_size": "43776",
+          "tcp.window_size_scalefactor": "128",
+          "tcp.checksum": "0x0000008c",
+          "tcp.checksum.status": "2",
+          "tcp.urgent_pointer": "0",
+          "tcp.options": "01:01:08:0a:da:b0:f1:a4:da:b0:f1:a4",
+          "tcp.options_tree": {
+            "No-Operation (NOP)": {
+              "tcp.options.type": "1",
+              "tcp.options.type_tree": {
+                "tcp.options.type.copy": "0",
+                "tcp.options.type.class": "0",
+                "tcp.options.type.number": "1"
+              }
+            },
+            "No-Operation (NOP)": {
+              "tcp.options.type": "1",
+              "tcp.options.type_tree": {
+                "tcp.options.type.copy": "0",
+                "tcp.options.type.class": "0",
+                "tcp.options.type.number": "1"
+              }
+            },
+            "Timestamps: TSval 3669029284, TSecr 3669029284": {
+              "tcp.option_kind": "8",
+              "tcp.option_len": "10",
+              "tcp.options.timestamp.tsval": "3669029284",
+              "tcp.options.timestamp.tsecr": "3669029284"
+            }
+          },
+          "tcp.analysis": {
+            "tcp.analysis.initial_rtt": "0.000017360",
+            "tcp.analysis.bytes_in_flight": "611",
+            "tcp.analysis.push_bytes_sent": "611"
+          }
+        },
+        "http": {
+          "GET \/static\/media\/HanoverByCW.ff8dc94a.svg HTTP\/1.1\\r\\n": {
+            "_ws.expert": {
+              "http.chat": "",
+              "_ws.expert.message": "GET \/static\/media\/HanoverByCW.ff8dc94a.svg HTTP\/1.1\\r\\n",
+              "_ws.expert.severity": "2097152",
+              "_ws.expert.group": "33554432"
+            },
+            "http.request.method": "GET",
+            "http.request.uri": "\/static\/media\/HanoverByCW.ff8dc94a.svg",
+            "http.request.version": "HTTP\/1.1"
+          },
+          "http.host": "test.com",
+          "http.request.line": "Host: test.com\r\n",
+          "http.connection": "keep-alive",
+          "http.request.line": "Connection: keep-alive\r\n",
+          "http.request.line": "Pragma: no-cache\r\n",
+          "http.cache_control": "no-cache",
+          "http.request.line": "Cache-Control: no-cache\r\n",
+          "http.user_agent": "Mozilla\/5.0 (X11; Linux x86_64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/61.0.3163.100 Safari\/537.36",
+          "http.request.line": "User-Agent: Mozilla\/5.0 (X11; Linux x86_64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/61.0.3163.100 Safari\/537.36\r\n",
+          "http.accept": "image\/webp,image\/apng,image\/*,*\/*;q=0.8",
+          "http.request.line": "Accept: image\/webp,image\/apng,image\/*,*\/*;q=0.8\r\n",
+          "http.referer": "http:\/\/test.com\/",
+          "http.request.line": "Referer: http:\/\/test.com\/\r\n",
+          "http.accept_encoding": "gzip, deflate",
+          "http.request.line": "Accept-Encoding: gzip, deflate\r\n",
+          "http.accept_language": "en-US,en;q=0.8",
+          "http.request.line": "Accept-Language: en-US,en;q=0.8\r\n",
+          "http.cookie": "intercom-id-n8ayu1h7=dae8b464-af34-422a-aec4-dd94cedb1330; CW-FirstTime=true; koa.sid=QE6NK3lGgTYw1wW5Fy1-LK9ZJLh7BFEf; koa.sid.sig=woV9r1s7EB6MmhYVpNz-Ln0kw-s",
+          "http.cookie_tree": {
+            "http.cookie_pair": "intercom-id-n8ayu1h7=dae8b464-af34-422a-aec4-dd94cedb1330",
+            "http.cookie_pair": "CW-FirstTime=true",
+            "http.cookie_pair": "koa.sid=QE6NK3lGgTYw1wW5Fy1-LK9ZJLh7BFEf",
+            "http.cookie_pair": "koa.sid.sig=woV9r1s7EB6MmhYVpNz-Ln0kw-s"
+          },
+          "http.request.line": "Cookie: intercom-id-n8ayu1h7=dae8b464-af34-422a-aec4-dd94cedb1330; CW-FirstTime=true; koa.sid=QE6NK3lGgTYw1wW5Fy1-LK9ZJLh7BFEf; koa.sid.sig=woV9r1s7EB6MmhYVpNz-Ln0kw-s\r\n",
+          "\\r\\n": "",
+          "http.request.full_uri": "http:\/\/test.com\/static\/media\/HanoverByCW.ff8dc94a.svg",
+          "http.request": "1",
+          "http.request_number": "1",
+          "http.response_in": "1672",
+          "http.next_request_in": "1694"
+        }
+      }
+    }
+  }
+  ,
+  {
+    "_index": "packets-2017-09-26",
+    "_type": "pcap_file",
+    "_score": null,
+    "_source": {
+      "layers": {
+        "frame": {
+          "frame.interface_id": "0",
+          "frame.encap_type": "1",
+          "frame.time": "Sep 26, 2017 00:47:33.553417546 CEST",
+          "frame.offset_shift": "0.000000000",
+          "frame.time_epoch": "1506379653.553417546",
+          "frame.time_delta": "0.000185888",
+          "frame.time_delta_displayed": "0.000221564",
+          "frame.time_relative": "17.920902230",
+          "frame.number": "1640",
+          "frame.len": "682",
+          "frame.cap_len": "682",
+          "frame.marked": "0",
+          "frame.ignored": "0",
+          "frame.protocols": "eth:ethertype:ip:tcp:http",
+          "frame.coloring_rule.name": "HTTP",
+          "frame.coloring_rule.string": "http || tcp.port == 80 || http2"
+        },
+        "eth": {
+          "eth.dst": "00:00:00:00:00:00",
+          "eth.dst_tree": {
+            "eth.dst_resolved": "00:00:00_00:00:00",
+            "eth.addr": "00:00:00:00:00:00",
+            "eth.addr_resolved": "00:00:00_00:00:00",
+            "eth.lg": "0",
+            "eth.ig": "0"
+          },
+          "eth.src": "00:00:00:00:00:00",
+          "eth.src_tree": {
+            "eth.src_resolved": "00:00:00_00:00:00",
+            "eth.addr": "00:00:00:00:00:00",
+            "eth.addr_resolved": "00:00:00_00:00:00",
+            "eth.lg": "0",
+            "eth.ig": "0"
+          },
+          "eth.type": "0x00000800"
+        },
+        "ip": {
+          "ip.version": "4",
+          "ip.hdr_len": "20",
+          "ip.dsfield": "0x00000000",
+          "ip.dsfield_tree": {
+            "ip.dsfield.dscp": "0",
+            "ip.dsfield.ecn": "0"
+          },
+          "ip.len": "668",
+          "ip.id": "0x00009a7e",
+          "ip.flags": "0x00000002",
+          "ip.flags_tree": {
+            "ip.flags.rb": "0",
+            "ip.flags.df": "1",
+            "ip.flags.mf": "0"
+          },
+          "ip.frag_offset": "0",
+          "ip.ttl": "64",
+          "ip.proto": "6",
+          "ip.checksum": "0x00009fdb",
+          "ip.checksum.status": "2",
+          "ip.src": "127.0.0.1",
+          "ip.addr": "127.0.0.1",
+          "ip.src_host": "127.0.0.1",
+          "ip.host": "127.0.0.1",
+          "ip.dst": "127.0.0.1",
+          "ip.addr": "127.0.0.1",
+          "ip.dst_host": "127.0.0.1",
+          "ip.host": "127.0.0.1",
+          "Source GeoIP: Unknown": "",
+          "Destination GeoIP: Unknown": ""
+        },
+        "tcp": {
+          "tcp.srcport": "35994",
+          "tcp.dstport": "80",
+          "tcp.port": "35994",
+          "tcp.port": "80",
+          "tcp.stream": "138",
+          "tcp.len": "616",
+          "tcp.seq": "1",
+          "tcp.nxtseq": "617",
+          "tcp.ack": "1",
+          "tcp.hdr_len": "32",
+          "tcp.flags": "0x00000018",
+          "tcp.flags_tree": {
+            "tcp.flags.res": "0",
+            "tcp.flags.ns": "0",
+            "tcp.flags.cwr": "0",
+            "tcp.flags.ecn": "0",
+            "tcp.flags.urg": "0",
+            "tcp.flags.ack": "1",
+            "tcp.flags.push": "1",
+            "tcp.flags.reset": "0",
+            "tcp.flags.syn": "0",
+            "tcp.flags.fin": "0",
+            "tcp.flags.str": "\u00c2\u00b7\u00c2\u00b7\u00c2\u00b7\u00c2\u00b7\u00c2\u00b7\u00c2\u00b7\u00c2\u00b7AP\u00c2\u00b7\u00c2\u00b7\u00c2\u00b7"
+          },
+          "tcp.window_size_value": "342",
+          "tcp.window_size": "43776",
+          "tcp.window_size_scalefactor": "128",
+          "tcp.checksum": "0x00000091",
+          "tcp.checksum.status": "2",
+          "tcp.urgent_pointer": "0",
+          "tcp.options": "01:01:08:0a:da:b0:f1:a4:da:b0:f1:a4",
+          "tcp.options_tree": {
+            "No-Operation (NOP)": {
+              "tcp.options.type": "1",
+              "tcp.options.type_tree": {
+                "tcp.options.type.copy": "0",
+                "tcp.options.type.class": "0",
+                "tcp.options.type.number": "1"
+              }
+            },
+            "No-Operation (NOP)": {
+              "tcp.options.type": "1",
+              "tcp.options.type_tree": {
+                "tcp.options.type.copy": "0",
+                "tcp.options.type.class": "0",
+                "tcp.options.type.number": "1"
+              }
+            },
+            "Timestamps: TSval 3669029284, TSecr 3669029284": {
+              "tcp.option_kind": "8",
+              "tcp.option_len": "10",
+              "tcp.options.timestamp.tsval": "3669029284",
+              "tcp.options.timestamp.tsecr": "3669029284"
+            }
+          },
+          "tcp.analysis": {
+            "tcp.analysis.initial_rtt": "0.000006483",
+            "tcp.analysis.bytes_in_flight": "616",
+            "tcp.analysis.push_bytes_sent": "616"
+          }
+        },
+        "http": {
+          "GET \/static\/media\/logo-coverwallet.91a1b127.svg HTTP\/1.1\\r\\n": {
+            "_ws.expert": {
+              "http.chat": "",
+              "_ws.expert.message": "GET \/static\/media\/logo-coverwallet.91a1b127.svg HTTP\/1.1\\r\\n",
+              "_ws.expert.severity": "2097152",
+              "_ws.expert.group": "33554432"
+            },
+            "http.request.method": "GET",
+            "http.request.uri": "\/static\/media\/logo-coverwallet.91a1b127.svg",
+            "http.request.version": "HTTP\/1.1"
+          },
+          "http.host": "test.com",
+          "http.request.line": "Host: test.com\r\n",
+          "http.connection": "keep-alive",
+          "http.request.line": "Connection: keep-alive\r\n",
+          "http.request.line": "Pragma: no-cache\r\n",
+          "http.cache_control": "no-cache",
+          "http.request.line": "Cache-Control: no-cache\r\n",
+          "http.user_agent": "Mozilla\/5.0 (X11; Linux x86_64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/61.0.3163.100 Safari\/537.36",
+          "http.request.line": "User-Agent: Mozilla\/5.0 (X11; Linux x86_64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/61.0.3163.100 Safari\/537.36\r\n",
+          "http.accept": "image\/webp,image\/apng,image\/*,*\/*;q=0.8",
+          "http.request.line": "Accept: image\/webp,image\/apng,image\/*,*\/*;q=0.8\r\n",
+          "http.referer": "http:\/\/test.com\/",
+          "http.request.line": "Referer: http:\/\/test.com\/\r\n",
+          "http.accept_encoding": "gzip, deflate",
+          "http.request.line": "Accept-Encoding: gzip, deflate\r\n",
+          "http.accept_language": "en-US,en;q=0.8",
+          "http.request.line": "Accept-Language: en-US,en;q=0.8\r\n",
+          "http.cookie": "intercom-id-n8ayu1h7=dae8b464-af34-422a-aec4-dd94cedb1330; CW-FirstTime=true; koa.sid=QE6NK3lGgTYw1wW5Fy1-LK9ZJLh7BFEf; koa.sid.sig=woV9r1s7EB6MmhYVpNz-Ln0kw-s",
+          "http.cookie_tree": {
+            "http.cookie_pair": "intercom-id-n8ayu1h7=dae8b464-af34-422a-aec4-dd94cedb1330",
+            "http.cookie_pair": "CW-FirstTime=true",
+            "http.cookie_pair": "koa.sid=QE6NK3lGgTYw1wW5Fy1-LK9ZJLh7BFEf",
+            "http.cookie_pair": "koa.sid.sig=woV9r1s7EB6MmhYVpNz-Ln0kw-s"
+          },
+          "http.request.line": "Cookie: intercom-id-n8ayu1h7=dae8b464-af34-422a-aec4-dd94cedb1330; CW-FirstTime=true; koa.sid=QE6NK3lGgTYw1wW5Fy1-LK9ZJLh7BFEf; koa.sid.sig=woV9r1s7EB6MmhYVpNz-Ln0kw-s\r\n",
+          "\\r\\n": "",
+          "http.request.full_uri": "http:\/\/test.com\/static\/media\/logo-coverwallet.91a1b127.svg",
+          "http.request": "1",
+          "http.request_number": "1",
+          "http.response_in": "1659",
+          "http.next_request_in": "1717"
+        }
+      }
+    }
+  }
+  ,
+  {
+    "_index": "packets-2017-09-26",
+    "_type": "pcap_file",
+    "_score": null,
+    "_source": {
+      "layers": {
+        "frame": {
+          "frame.interface_id": "0",
+          "frame.encap_type": "1",
+          "frame.time": "Sep 26, 2017 00:47:33.569859180 CEST",
+          "frame.offset_shift": "0.000000000",
+          "frame.time_epoch": "1506379653.569859180",
+          "frame.time_delta": "0.003332918",
+          "frame.time_delta_displayed": "0.016441634",
+          "frame.time_relative": "17.937343864",
+          "frame.number": "1694",
+          "frame.len": "659",
+          "frame.cap_len": "659",
+          "frame.marked": "0",
+          "frame.ignored": "0",
+          "frame.protocols": "eth:ethertype:ip:tcp:http",
+          "frame.coloring_rule.name": "HTTP",
+          "frame.coloring_rule.string": "http || tcp.port == 80 || http2"
+        },
+        "eth": {
+          "eth.dst": "00:00:00:00:00:00",
+          "eth.dst_tree": {
+            "eth.dst_resolved": "00:00:00_00:00:00",
+            "eth.addr": "00:00:00:00:00:00",
+            "eth.addr_resolved": "00:00:00_00:00:00",
+            "eth.lg": "0",
+            "eth.ig": "0"
+          },
+          "eth.src": "00:00:00:00:00:00",
+          "eth.src_tree": {
+            "eth.src_resolved": "00:00:00_00:00:00",
+            "eth.addr": "00:00:00:00:00:00",
+            "eth.addr_resolved": "00:00:00_00:00:00",
+            "eth.lg": "0",
+            "eth.ig": "0"
+          },
+          "eth.type": "0x00000800"
+        },
+        "ip": {
+          "ip.version": "4",
+          "ip.hdr_len": "20",
+          "ip.dsfield": "0x00000000",
+          "ip.dsfield_tree": {
+            "ip.dsfield.dscp": "0",
+            "ip.dsfield.ecn": "0"
+          },
+          "ip.len": "645",
+          "ip.id": "0x00002d53",
+          "ip.flags": "0x00000002",
+          "ip.flags_tree": {
+            "ip.flags.rb": "0",
+            "ip.flags.df": "1",
+            "ip.flags.mf": "0"
+          },
+          "ip.frag_offset": "0",
+          "ip.ttl": "64",
+          "ip.proto": "6",
+          "ip.checksum": "0x00000d1e",
+          "ip.checksum.status": "2",
+          "ip.src": "127.0.0.1",
+          "ip.addr": "127.0.0.1",
+          "ip.src_host": "127.0.0.1",
+          "ip.host": "127.0.0.1",
+          "ip.dst": "127.0.0.1",
+          "ip.addr": "127.0.0.1",
+          "ip.dst_host": "127.0.0.1",
+          "ip.host": "127.0.0.1",
+          "Source GeoIP: Unknown": "",
+          "Destination GeoIP: Unknown": ""
+        },
+        "tcp": {
+          "tcp.srcport": "35992",
+          "tcp.dstport": "80",
+          "tcp.port": "35992",
+          "tcp.port": "80",
+          "tcp.stream": "137",
+          "tcp.len": "593",
+          "tcp.seq": "612",
+          "tcp.nxtseq": "1205",
+          "tcp.ack": "11129",
+          "tcp.hdr_len": "32",
+          "tcp.flags": "0x00000018",
+          "tcp.flags_tree": {
+            "tcp.flags.res": "0",
+            "tcp.flags.ns": "0",
+            "tcp.flags.cwr": "0",
+            "tcp.flags.ecn": "0",
+            "tcp.flags.urg": "0",
+            "tcp.flags.ack": "1",
+            "tcp.flags.push": "1",
+            "tcp.flags.reset": "0",
+            "tcp.flags.syn": "0",
+            "tcp.flags.fin": "0",
+            "tcp.flags.str": "\u00c2\u00b7\u00c2\u00b7\u00c2\u00b7\u00c2\u00b7\u00c2\u00b7\u00c2\u00b7\u00c2\u00b7AP\u00c2\u00b7\u00c2\u00b7\u00c2\u00b7"
+          },
+          "tcp.window_size_value": "2388",
+          "tcp.window_size": "305664",
+          "tcp.window_size_scalefactor": "128",
+          "tcp.checksum": "0x0000007a",
+          "tcp.checksum.status": "2",
+          "tcp.urgent_pointer": "0",
+          "tcp.options": "01:01:08:0a:da:b0:f1:a8:da:b0:f1:a7",
+          "tcp.options_tree": {
+            "No-Operation (NOP)": {
+              "tcp.options.type": "1",
+              "tcp.options.type_tree": {
+                "tcp.options.type.copy": "0",
+                "tcp.options.type.class": "0",
+                "tcp.options.type.number": "1"
+              }
+            },
+            "No-Operation (NOP)": {
+              "tcp.options.type": "1",
+              "tcp.options.type_tree": {
+                "tcp.options.type.copy": "0",
+                "tcp.options.type.class": "0",
+                "tcp.options.type.number": "1"
+              }
+            },
+            "Timestamps: TSval 3669029288, TSecr 3669029287": {
+              "tcp.option_kind": "8",
+              "tcp.option_len": "10",
+              "tcp.options.timestamp.tsval": "3669029288",
+              "tcp.options.timestamp.tsecr": "3669029287"
+            }
+          },
+          "tcp.analysis": {
+            "tcp.analysis.initial_rtt": "0.000017360",
+            "tcp.analysis.bytes_in_flight": "593",
+            "tcp.analysis.push_bytes_sent": "593"
+          }
+        },
+        "http": {
+          "GET \/api\/v1\/quote?pathname=%2F HTTP\/1.1\\r\\n": {
+            "_ws.expert": {
+              "http.chat": "",
+              "_ws.expert.message": "GET \/api\/v1\/quote?pathname=%2F HTTP\/1.1\\r\\n",
+              "_ws.expert.severity": "2097152",
+              "_ws.expert.group": "33554432"
+            },
+            "http.request.method": "GET",
+            "http.request.uri": "\/api\/v1\/quote?pathname=%2F",
+            "http.request.uri_tree": {
+              "http.request.uri.path": "\/api\/v1\/quote",
+              "http.request.uri.query": "pathname=%2F",
+              "http.request.uri.query_tree": {
+                "http.request.uri.query.parameter": "pathname=%2F"
+              }
+            },
+            "http.request.version": "HTTP\/1.1"
+          },
+          "http.host": "test.com",
+          "http.request.line": "Host: test.com\r\n",
+          "http.connection": "keep-alive",
+          "http.request.line": "Connection: keep-alive\r\n",
+          "http.request.line": "Pragma: no-cache\r\n",
+          "http.cache_control": "no-cache",
+          "http.request.line": "Cache-Control: no-cache\r\n",
+          "http.accept": "application\/json, text\/plain, *\/*",
+          "http.request.line": "Accept: application\/json, text\/plain, *\/*\r\n",
+          "http.user_agent": "Mozilla\/5.0 (X11; Linux x86_64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/61.0.3163.100 Safari\/537.36",
+          "http.request.line": "User-Agent: Mozilla\/5.0 (X11; Linux x86_64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/61.0.3163.100 Safari\/537.36\r\n",
+          "http.referer": "http:\/\/test.com\/",
+          "http.request.line": "Referer: http:\/\/test.com\/\r\n",
+          "http.accept_encoding": "gzip, deflate",
+          "http.request.line": "Accept-Encoding: gzip, deflate\r\n",
+          "http.accept_language": "en-US,en;q=0.8",
+          "http.request.line": "Accept-Language: en-US,en;q=0.8\r\n",
+          "http.cookie": "intercom-id-n8ayu1h7=dae8b464-af34-422a-aec4-dd94cedb1330; CW-FirstTime=true; koa.sid=QE6NK3lGgTYw1wW5Fy1-LK9ZJLh7BFEf; koa.sid.sig=woV9r1s7EB6MmhYVpNz-Ln0kw-s",
+          "http.cookie_tree": {
+            "http.cookie_pair": "intercom-id-n8ayu1h7=dae8b464-af34-422a-aec4-dd94cedb1330",
+            "http.cookie_pair": "CW-FirstTime=true",
+            "http.cookie_pair": "koa.sid=QE6NK3lGgTYw1wW5Fy1-LK9ZJLh7BFEf",
+            "http.cookie_pair": "koa.sid.sig=woV9r1s7EB6MmhYVpNz-Ln0kw-s"
+          },
+          "http.request.line": "Cookie: intercom-id-n8ayu1h7=dae8b464-af34-422a-aec4-dd94cedb1330; CW-FirstTime=true; koa.sid=QE6NK3lGgTYw1wW5Fy1-LK9ZJLh7BFEf; koa.sid.sig=woV9r1s7EB6MmhYVpNz-Ln0kw-s\r\n",
+          "\\r\\n": "",
+          "http.request.full_uri": "http:\/\/test.com\/api\/v1\/quote?pathname=%2F",
+          "http.request": "1",
+          "http.request_number": "2",
+          "http.prev_request_in": "1635",
+          "http.response_in": "1869",
+          "http.next_request_in": "4272"
+        }
+      }
+    }
+  }
+  ,
+  {
+    "_index": "packets-2017-09-26",
+    "_type": "pcap_file",
+    "_score": null,
+    "_source": {
+      "layers": {
+        "frame": {
+          "frame.interface_id": "0",
+          "frame.encap_type": "1",
+          "frame.time": "Sep 26, 2017 00:47:33.576667529 CEST",
+          "frame.offset_shift": "0.000000000",
+          "frame.time_epoch": "1506379653.576667529",
+          "frame.time_delta": "0.003628565",
+          "frame.time_delta_displayed": "0.006808349",
+          "frame.time_relative": "17.944152213",
+          "frame.number": "1717",
+          "frame.len": "648",
+          "frame.cap_len": "648",
+          "frame.marked": "0",
+          "frame.ignored": "0",
+          "frame.protocols": "eth:ethertype:ip:tcp:http",
+          "frame.coloring_rule.name": "HTTP",
+          "frame.coloring_rule.string": "http || tcp.port == 80 || http2"
+        },
+        "eth": {
+          "eth.dst": "00:00:00:00:00:00",
+          "eth.dst_tree": {
+            "eth.dst_resolved": "00:00:00_00:00:00",
+            "eth.addr": "00:00:00:00:00:00",
+            "eth.addr_resolved": "00:00:00_00:00:00",
+            "eth.lg": "0",
+            "eth.ig": "0"
+          },
+          "eth.src": "00:00:00:00:00:00",
+          "eth.src_tree": {
+            "eth.src_resolved": "00:00:00_00:00:00",
+            "eth.addr": "00:00:00:00:00:00",
+            "eth.addr_resolved": "00:00:00_00:00:00",
+            "eth.lg": "0",
+            "eth.ig": "0"
+          },
+          "eth.type": "0x00000800"
+        },
+        "ip": {
+          "ip.version": "4",
+          "ip.hdr_len": "20",
+          "ip.dsfield": "0x00000000",
+          "ip.dsfield_tree": {
+            "ip.dsfield.dscp": "0",
+            "ip.dsfield.ecn": "0"
+          },
+          "ip.len": "634",
+          "ip.id": "0x00009a80",
+          "ip.flags": "0x00000002",
+          "ip.flags_tree": {
+            "ip.flags.rb": "0",
+            "ip.flags.df": "1",
+            "ip.flags.mf": "0"
+          },
+          "ip.frag_offset": "0",
+          "ip.ttl": "64",
+          "ip.proto": "6",
+          "ip.checksum": "0x00009ffb",
+          "ip.checksum.status": "2",
+          "ip.src": "127.0.0.1",
+          "ip.addr": "127.0.0.1",
+          "ip.src_host": "127.0.0.1",
+          "ip.host": "127.0.0.1",
+          "ip.dst": "127.0.0.1",
+          "ip.addr": "127.0.0.1",
+          "ip.dst_host": "127.0.0.1",
+          "ip.host": "127.0.0.1",
+          "Source GeoIP: Unknown": "",
+          "Destination GeoIP: Unknown": ""
+        },
+        "tcp": {
+          "tcp.srcport": "35994",
+          "tcp.dstport": "80",
+          "tcp.port": "35994",
+          "tcp.port": "80",
+          "tcp.stream": "138",
+          "tcp.len": "582",
+          "tcp.seq": "617",
+          "tcp.nxtseq": "1199",
+          "tcp.ack": "1056",
+          "tcp.hdr_len": "32",
+          "tcp.flags": "0x00000018",
+          "tcp.flags_tree": {
+            "tcp.flags.res": "0",
+            "tcp.flags.ns": "0",
+            "tcp.flags.cwr": "0",
+            "tcp.flags.ecn": "0",
+            "tcp.flags.urg": "0",
+            "tcp.flags.ack": "1",
+            "tcp.flags.push": "1",
+            "tcp.flags.reset": "0",
+            "tcp.flags.syn": "0",
+            "tcp.flags.fin": "0",
+            "tcp.flags.str": "\u00c2\u00b7\u00c2\u00b7\u00c2\u00b7\u00c2\u00b7\u00c2\u00b7\u00c2\u00b7\u00c2\u00b7AP\u00c2\u00b7\u00c2\u00b7\u00c2\u00b7"
+          },
+          "tcp.window_size_value": "358",
+          "tcp.window_size": "45824",
+          "tcp.window_size_scalefactor": "128",
+          "tcp.checksum": "0x0000006f",
+          "tcp.checksum.status": "2",
+          "tcp.urgent_pointer": "0",
+          "tcp.options": "01:01:08:0a:da:b0:f1:aa:da:b0:f1:a6",
+          "tcp.options_tree": {
+            "No-Operation (NOP)": {
+              "tcp.options.type": "1",
+              "tcp.options.type_tree": {
+                "tcp.options.type.copy": "0",
+                "tcp.options.type.class": "0",
+                "tcp.options.type.number": "1"
+              }
+            },
+            "No-Operation (NOP)": {
+              "tcp.options.type": "1",
+              "tcp.options.type_tree": {
+                "tcp.options.type.copy": "0",
+                "tcp.options.type.class": "0",
+                "tcp.options.type.number": "1"
+              }
+            },
+            "Timestamps: TSval 3669029290, TSecr 3669029286": {
+              "tcp.option_kind": "8",
+              "tcp.option_len": "10",
+              "tcp.options.timestamp.tsval": "3669029290",
+              "tcp.options.timestamp.tsecr": "3669029286"
+            }
+          },
+          "tcp.analysis": {
+            "tcp.analysis.initial_rtt": "0.000006483",
+            "tcp.analysis.bytes_in_flight": "582",
+            "tcp.analysis.push_bytes_sent": "582"
+          }
+        },
+        "http": {
+          "GET \/api\/v1\/tooltip HTTP\/1.1\\r\\n": {
+            "_ws.expert": {
+              "http.chat": "",
+              "_ws.expert.message": "GET \/api\/v1\/tooltip HTTP\/1.1\\r\\n",
+              "_ws.expert.severity": "2097152",
+              "_ws.expert.group": "33554432"
+            },
+            "http.request.method": "GET",
+            "http.request.uri": "\/api\/v1\/tooltip",
+            "http.request.version": "HTTP\/1.1"
+          },
+          "http.host": "test.com",
+          "http.request.line": "Host: test.com\r\n",
+          "http.connection": "keep-alive",
+          "http.request.line": "Connection: keep-alive\r\n",
+          "http.request.line": "Pragma: no-cache\r\n",
+          "http.cache_control": "no-cache",
+          "http.request.line": "Cache-Control: no-cache\r\n",
+          "http.accept": "application\/json, text\/plain, *\/*",
+          "http.request.line": "Accept: application\/json, text\/plain, *\/*\r\n",
+          "http.user_agent": "Mozilla\/5.0 (X11; Linux x86_64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/61.0.3163.100 Safari\/537.36",
+          "http.request.line": "User-Agent: Mozilla\/5.0 (X11; Linux x86_64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/61.0.3163.100 Safari\/537.36\r\n",
+          "http.referer": "http:\/\/test.com\/",
+          "http.request.line": "Referer: http:\/\/test.com\/\r\n",
+          "http.accept_encoding": "gzip, deflate",
+          "http.request.line": "Accept-Encoding: gzip, deflate\r\n",
+          "http.accept_language": "en-US,en;q=0.8",
+          "http.request.line": "Accept-Language: en-US,en;q=0.8\r\n",
+          "http.cookie": "intercom-id-n8ayu1h7=dae8b464-af34-422a-aec4-dd94cedb1330; CW-FirstTime=true; koa.sid=QE6NK3lGgTYw1wW5Fy1-LK9ZJLh7BFEf; koa.sid.sig=woV9r1s7EB6MmhYVpNz-Ln0kw-s",
+          "http.cookie_tree": {
+            "http.cookie_pair": "intercom-id-n8ayu1h7=dae8b464-af34-422a-aec4-dd94cedb1330",
+            "http.cookie_pair": "CW-FirstTime=true",
+            "http.cookie_pair": "koa.sid=QE6NK3lGgTYw1wW5Fy1-LK9ZJLh7BFEf",
+            "http.cookie_pair": "koa.sid.sig=woV9r1s7EB6MmhYVpNz-Ln0kw-s"
+          },
+          "http.request.line": "Cookie: intercom-id-n8ayu1h7=dae8b464-af34-422a-aec4-dd94cedb1330; CW-FirstTime=true; koa.sid=QE6NK3lGgTYw1wW5Fy1-LK9ZJLh7BFEf; koa.sid.sig=woV9r1s7EB6MmhYVpNz-Ln0kw-s\r\n",
+          "\\r\\n": "",
+          "http.request.full_uri": "http:\/\/test.com\/api\/v1\/tooltip",
+          "http.request": "1",
+          "http.request_number": "2",
+          "http.prev_request_in": "1640",
+          "http.response_in": "1733"
+        }
+      }
+    }
+  }
+  ,
+  {
+    "_index": "packets-2017-09-26",
+    "_type": "pcap_file",
+    "_score": null,
+    "_source": {
+      "layers": {
+        "frame": {
+          "frame.interface_id": "0",
+          "frame.encap_type": "1",
+          "frame.time": "Sep 26, 2017 00:47:33.826194001 CEST",
+          "frame.offset_shift": "0.000000000",
+          "frame.time_epoch": "1506379653.826194001",
+          "frame.time_delta": "0.082463916",
+          "frame.time_delta_displayed": "0.249526472",
+          "frame.time_relative": "18.193678685",
+          "frame.number": "1917",
+          "frame.len": "689",
+          "frame.cap_len": "689",
+          "frame.marked": "0",
+          "frame.ignored": "0",
+          "frame.protocols": "eth:ethertype:ip:tcp:http",
+          "frame.coloring_rule.name": "HTTP",
+          "frame.coloring_rule.string": "http || tcp.port == 80 || http2"
+        },
+        "eth": {
+          "eth.dst": "00:00:00:00:00:00",
+          "eth.dst_tree": {
+            "eth.dst_resolved": "00:00:00_00:00:00",
+            "eth.addr": "00:00:00:00:00:00",
+            "eth.addr_resolved": "00:00:00_00:00:00",
+            "eth.lg": "0",
+            "eth.ig": "0"
+          },
+          "eth.src": "00:00:00:00:00:00",
+          "eth.src_tree": {
+            "eth.src_resolved": "00:00:00_00:00:00",
+            "eth.addr": "00:00:00:00:00:00",
+            "eth.addr_resolved": "00:00:00_00:00:00",
+            "eth.lg": "0",
+            "eth.ig": "0"
+          },
+          "eth.type": "0x00000800"
+        },
+        "ip": {
+          "ip.version": "4",
+          "ip.hdr_len": "20",
+          "ip.dsfield": "0x00000000",
+          "ip.dsfield_tree": {
+            "ip.dsfield.dscp": "0",
+            "ip.dsfield.ecn": "0"
+          },
+          "ip.len": "675",
+          "ip.id": "0x00000b01",
+          "ip.flags": "0x00000002",
+          "ip.flags_tree": {
+            "ip.flags.rb": "0",
+            "ip.flags.df": "1",
+            "ip.flags.mf": "0"
+          },
+          "ip.frag_offset": "0",
+          "ip.ttl": "64",
+          "ip.proto": "6",
+          "ip.checksum": "0x00002f52",
+          "ip.checksum.status": "2",
+          "ip.src": "127.0.0.1",
+          "ip.addr": "127.0.0.1",
+          "ip.src_host": "127.0.0.1",
+          "ip.host": "127.0.0.1",
+          "ip.dst": "127.0.0.1",
+          "ip.addr": "127.0.0.1",
+          "ip.dst_host": "127.0.0.1",
+          "ip.host": "127.0.0.1",
+          "Source GeoIP: Unknown": "",
+          "Destination GeoIP: Unknown": ""
+        },
+        "tcp": {
+          "tcp.srcport": "35984",
+          "tcp.dstport": "80",
+          "tcp.port": "35984",
+          "tcp.port": "80",
+          "tcp.stream": "132",
+          "tcp.len": "623",
+          "tcp.seq": "1640",
+          "tcp.nxtseq": "2263",
+          "tcp.ack": "2387757",
+          "tcp.hdr_len": "32",
+          "tcp.flags": "0x00000018",
+          "tcp.flags_tree": {
+            "tcp.flags.res": "0",
+            "tcp.flags.ns": "0",
+            "tcp.flags.cwr": "0",
+            "tcp.flags.ecn": "0",
+            "tcp.flags.urg": "0",
+            "tcp.flags.ack": "1",
+            "tcp.flags.push": "1",
+            "tcp.flags.reset": "0",
+            "tcp.flags.syn": "0",
+            "tcp.flags.fin": "0",
+            "tcp.flags.str": "\u00c2\u00b7\u00c2\u00b7\u00c2\u00b7\u00c2\u00b7\u00c2\u00b7\u00c2\u00b7\u00c2\u00b7AP\u00c2\u00b7\u00c2\u00b7\u00c2\u00b7"
+          },
+          "tcp.window_size_value": "19446",
+          "tcp.window_size": "2489088",
+          "tcp.window_size_scalefactor": "128",
+          "tcp.checksum": "0x00000098",
+          "tcp.checksum.status": "2",
+          "tcp.urgent_pointer": "0",
+          "tcp.options": "01:01:08:0a:da:b0:f1:e8:da:b0:f1:c6",
+          "tcp.options_tree": {
+            "No-Operation (NOP)": {
+              "tcp.options.type": "1",
+              "tcp.options.type_tree": {
+                "tcp.options.type.copy": "0",
+                "tcp.options.type.class": "0",
+                "tcp.options.type.number": "1"
+              }
+            },
+            "No-Operation (NOP)": {
+              "tcp.options.type": "1",
+              "tcp.options.type_tree": {
+                "tcp.options.type.copy": "0",
+                "tcp.options.type.class": "0",
+                "tcp.options.type.number": "1"
+              }
+            },
+            "Timestamps: TSval 3669029352, TSecr 3669029318": {
+              "tcp.option_kind": "8",
+              "tcp.option_len": "10",
+              "tcp.options.timestamp.tsval": "3669029352",
+              "tcp.options.timestamp.tsecr": "3669029318"
+            }
+          },
+          "tcp.analysis": {
+            "tcp.analysis.initial_rtt": "0.000053847",
+            "tcp.analysis.bytes_in_flight": "623",
+            "tcp.analysis.push_bytes_sent": "623"
+          }
+        },
+        "http": {
+          "GET \/static\/media\/coverwallet.952f35dd.woff HTTP\/1.1\\r\\n": {
+            "_ws.expert": {
+              "http.chat": "",
+              "_ws.expert.message": "GET \/static\/media\/coverwallet.952f35dd.woff HTTP\/1.1\\r\\n",
+              "_ws.expert.severity": "2097152",
+              "_ws.expert.group": "33554432"
+            },
+            "http.request.method": "GET",
+            "http.request.uri": "\/static\/media\/coverwallet.952f35dd.woff",
+            "http.request.version": "HTTP\/1.1"
+          },
+          "http.host": "test.com",
+          "http.request.line": "Host: test.com\r\n",
+          "http.connection": "keep-alive",
+          "http.request.line": "Connection: keep-alive\r\n",
+          "http.request.line": "Pragma: no-cache\r\n",
+          "http.cache_control": "no-cache",
+          "http.request.line": "Cache-Control: no-cache\r\n",
+          "http.request.line": "Origin: http:\/\/test.com\r\n",
+          "http.user_agent": "Mozilla\/5.0 (X11; Linux x86_64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/61.0.3163.100 Safari\/537.36",
+          "http.request.line": "User-Agent: Mozilla\/5.0 (X11; Linux x86_64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/61.0.3163.100 Safari\/537.36\r\n",
+          "http.accept": "*\/*",
+          "http.request.line": "Accept: *\/*\r\n",
+          "http.referer": "http:\/\/test.com\/",
+          "http.request.line": "Referer: http:\/\/test.com\/\r\n",
+          "http.accept_encoding": "gzip, deflate",
+          "http.request.line": "Accept-Encoding: gzip, deflate\r\n",
+          "http.accept_language": "en-US,en;q=0.8",
+          "http.request.line": "Accept-Language: en-US,en;q=0.8\r\n",
+          "http.cookie": "intercom-id-n8ayu1h7=dae8b464-af34-422a-aec4-dd94cedb1330; CW-FirstTime=true; koa.sid=QE6NK3lGgTYw1wW5Fy1-LK9ZJLh7BFEf; koa.sid.sig=woV9r1s7EB6MmhYVpNz-Ln0kw-s",
+          "http.cookie_tree": {
+            "http.cookie_pair": "intercom-id-n8ayu1h7=dae8b464-af34-422a-aec4-dd94cedb1330",
+            "http.cookie_pair": "CW-FirstTime=true",
+            "http.cookie_pair": "koa.sid=QE6NK3lGgTYw1wW5Fy1-LK9ZJLh7BFEf",
+            "http.cookie_pair": "koa.sid.sig=woV9r1s7EB6MmhYVpNz-Ln0kw-s"
+          },
+          "http.request.line": "Cookie: intercom-id-n8ayu1h7=dae8b464-af34-422a-aec4-dd94cedb1330; CW-FirstTime=true; koa.sid=QE6NK3lGgTYw1wW5Fy1-LK9ZJLh7BFEf; koa.sid.sig=woV9r1s7EB6MmhYVpNz-Ln0kw-s\r\n",
+          "\\r\\n": "",
+          "http.request.full_uri": "http:\/\/test.com\/static\/media\/coverwallet.952f35dd.woff",
+          "http.request": "1",
+          "http.request_number": "4",
+          "http.prev_request_in": "1444",
+          "http.response_in": "1932",
+          "http.next_request_in": "1937"
+        }
+      }
+    }
+  }
+  ,
+  {
+    "_index": "packets-2017-09-26",
+    "_type": "pcap_file",
+    "_score": null,
+    "_source": {
+      "layers": {
+        "frame": {
+          "frame.interface_id": "0",
+          "frame.encap_type": "1",
+          "frame.time": "Sep 26, 2017 00:47:33.852769313 CEST",
+          "frame.offset_shift": "0.000000000",
+          "frame.time_epoch": "1506379653.852769313",
+          "frame.time_delta": "0.025047789",
+          "frame.time_delta_displayed": "0.026575312",
+          "frame.time_relative": "18.220253997",
+          "frame.number": "1937",
+          "frame.len": "636",
+          "frame.cap_len": "636",
+          "frame.marked": "0",
+          "frame.ignored": "0",
+          "frame.protocols": "eth:ethertype:ip:tcp:http",
+          "frame.coloring_rule.name": "HTTP",
+          "frame.coloring_rule.string": "http || tcp.port == 80 || http2"
+        },
+        "eth": {
+          "eth.dst": "00:00:00:00:00:00",
+          "eth.dst_tree": {
+            "eth.dst_resolved": "00:00:00_00:00:00",
+            "eth.addr": "00:00:00:00:00:00",
+            "eth.addr_resolved": "00:00:00_00:00:00",
+            "eth.lg": "0",
+            "eth.ig": "0"
+          },
+          "eth.src": "00:00:00:00:00:00",
+          "eth.src_tree": {
+            "eth.src_resolved": "00:00:00_00:00:00",
+            "eth.addr": "00:00:00:00:00:00",
+            "eth.addr_resolved": "00:00:00_00:00:00",
+            "eth.lg": "0",
+            "eth.ig": "0"
+          },
+          "eth.type": "0x00000800"
+        },
+        "ip": {
+          "ip.version": "4",
+          "ip.hdr_len": "20",
+          "ip.dsfield": "0x00000000",
+          "ip.dsfield_tree": {
+            "ip.dsfield.dscp": "0",
+            "ip.dsfield.ecn": "0"
+          },
+          "ip.len": "622",
+          "ip.id": "0x00000b03",
+          "ip.flags": "0x00000002",
+          "ip.flags_tree": {
+            "ip.flags.rb": "0",
+            "ip.flags.df": "1",
+            "ip.flags.mf": "0"
+          },
+          "ip.frag_offset": "0",
+          "ip.ttl": "64",
+          "ip.proto": "6",
+          "ip.checksum": "0x00002f85",
+          "ip.checksum.status": "2",
+          "ip.src": "127.0.0.1",
+          "ip.addr": "127.0.0.1",
+          "ip.src_host": "127.0.0.1",
+          "ip.host": "127.0.0.1",
+          "ip.dst": "127.0.0.1",
+          "ip.addr": "127.0.0.1",
+          "ip.dst_host": "127.0.0.1",
+          "ip.host": "127.0.0.1",
+          "Source GeoIP: Unknown": "",
+          "Destination GeoIP: Unknown": ""
+        },
+        "tcp": {
+          "tcp.srcport": "35984",
+          "tcp.dstport": "80",
+          "tcp.port": "35984",
+          "tcp.port": "80",
+          "tcp.stream": "132",
+          "tcp.len": "570",
+          "tcp.seq": "2263",
+          "tcp.nxtseq": "2833",
+          "tcp.ack": "2458161",
+          "tcp.hdr_len": "32",
+          "tcp.flags": "0x00000018",
+          "tcp.flags_tree": {
+            "tcp.flags.res": "0",
+            "tcp.flags.ns": "0",
+            "tcp.flags.cwr": "0",
+            "tcp.flags.ecn": "0",
+            "tcp.flags.urg": "0",
+            "tcp.flags.ack": "1",
+            "tcp.flags.push": "1",
+            "tcp.flags.reset": "0",
+            "tcp.flags.syn": "0",
+            "tcp.flags.fin": "0",
+            "tcp.flags.str": "\u00c2\u00b7\u00c2\u00b7\u00c2\u00b7\u00c2\u00b7\u00c2\u00b7\u00c2\u00b7\u00c2\u00b7AP\u00c2\u00b7\u00c2\u00b7\u00c2\u00b7"
+          },
+          "tcp.window_size_value": "19446",
+          "tcp.window_size": "2489088",
+          "tcp.window_size_scalefactor": "128",
+          "tcp.checksum": "0x00000063",
+          "tcp.checksum.status": "2",
+          "tcp.urgent_pointer": "0",
+          "tcp.options": "01:01:08:0a:da:b0:f1:ef:da:b0:f1:e9",
+          "tcp.options_tree": {
+            "No-Operation (NOP)": {
+              "tcp.options.type": "1",
+              "tcp.options.type_tree": {
+                "tcp.options.type.copy": "0",
+                "tcp.options.type.class": "0",
+                "tcp.options.type.number": "1"
+              }
+            },
+            "No-Operation (NOP)": {
+              "tcp.options.type": "1",
+              "tcp.options.type_tree": {
+                "tcp.options.type.copy": "0",
+                "tcp.options.type.class": "0",
+                "tcp.options.type.number": "1"
+              }
+            },
+            "Timestamps: TSval 3669029359, TSecr 3669029353": {
+              "tcp.option_kind": "8",
+              "tcp.option_len": "10",
+              "tcp.options.timestamp.tsval": "3669029359",
+              "tcp.options.timestamp.tsecr": "3669029353"
+            }
+          },
+          "tcp.analysis": {
+            "tcp.analysis.initial_rtt": "0.000053847",
+            "tcp.analysis.bytes_in_flight": "570",
+            "tcp.analysis.push_bytes_sent": "570"
+          }
+        },
+        "http": {
+          "GET \/sockjs-node\/info?t=1506379653844 HTTP\/1.1\\r\\n": {
+            "_ws.expert": {
+              "http.chat": "",
+              "_ws.expert.message": "GET \/sockjs-node\/info?t=1506379653844 HTTP\/1.1\\r\\n",
+              "_ws.expert.severity": "2097152",
+              "_ws.expert.group": "33554432"
+            },
+            "http.request.method": "GET",
+            "http.request.uri": "\/sockjs-node\/info?t=1506379653844",
+            "http.request.uri_tree": {
+              "http.request.uri.path": "\/sockjs-node\/info",
+              "http.request.uri.query": "t=1506379653844",
+              "http.request.uri.query_tree": {
+                "http.request.uri.query.parameter": "t=1506379653844"
+              }
+            },
+            "http.request.version": "HTTP\/1.1"
+          },
+          "http.host": "test.com",
+          "http.request.line": "Host: test.com\r\n",
+          "http.connection": "keep-alive",
+          "http.request.line": "Connection: keep-alive\r\n",
+          "http.request.line": "Pragma: no-cache\r\n",
+          "http.cache_control": "no-cache",
+          "http.request.line": "Cache-Control: no-cache\r\n",
+          "http.user_agent": "Mozilla\/5.0 (X11; Linux x86_64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/61.0.3163.100 Safari\/537.36",
+          "http.request.line": "User-Agent: Mozilla\/5.0 (X11; Linux x86_64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/61.0.3163.100 Safari\/537.36\r\n",
+          "http.accept": "*\/*",
+          "http.request.line": "Accept: *\/*\r\n",
+          "http.referer": "http:\/\/test.com\/",
+          "http.request.line": "Referer: http:\/\/test.com\/\r\n",
+          "http.accept_encoding": "gzip, deflate",
+          "http.request.line": "Accept-Encoding: gzip, deflate\r\n",
+          "http.accept_language": "en-US,en;q=0.8",
+          "http.request.line": "Accept-Language: en-US,en;q=0.8\r\n",
+          "http.cookie": "intercom-id-n8ayu1h7=dae8b464-af34-422a-aec4-dd94cedb1330; CW-FirstTime=true; koa.sid=QE6NK3lGgTYw1wW5Fy1-LK9ZJLh7BFEf; koa.sid.sig=woV9r1s7EB6MmhYVpNz-Ln0kw-s",
+          "http.cookie_tree": {
+            "http.cookie_pair": "intercom-id-n8ayu1h7=dae8b464-af34-422a-aec4-dd94cedb1330",
+            "http.cookie_pair": "CW-FirstTime=true",
+            "http.cookie_pair": "koa.sid=QE6NK3lGgTYw1wW5Fy1-LK9ZJLh7BFEf",
+            "http.cookie_pair": "koa.sid.sig=woV9r1s7EB6MmhYVpNz-Ln0kw-s"
+          },
+          "http.request.line": "Cookie: intercom-id-n8ayu1h7=dae8b464-af34-422a-aec4-dd94cedb1330; CW-FirstTime=true; koa.sid=QE6NK3lGgTYw1wW5Fy1-LK9ZJLh7BFEf; koa.sid.sig=woV9r1s7EB6MmhYVpNz-Ln0kw-s\r\n",
+          "\\r\\n": "",
+          "http.request.full_uri": "http:\/\/test.com\/sockjs-node\/info?t=1506379653844",
+          "http.request": "1",
+          "http.request_number": "5",
+          "http.prev_request_in": "1917",
+          "http.response_in": "1948",
+          "http.next_request_in": "1973"
+        }
+      }
+    }
+  }
+  ,
+  {
+    "_index": "packets-2017-09-26",
+    "_type": "pcap_file",
+    "_score": null,
+    "_source": {
+      "layers": {
+        "frame": {
+          "frame.interface_id": "0",
+          "frame.encap_type": "1",
+          "frame.time": "Sep 26, 2017 00:47:33.977462799 CEST",
+          "frame.offset_shift": "0.000000000",
+          "frame.time_epoch": "1506379653.977462799",
+          "frame.time_delta": "0.002611499",
+          "frame.time_delta_displayed": "0.124693486",
+          "frame.time_relative": "18.344947483",
+          "frame.number": "1956",
+          "frame.len": "782",
+          "frame.cap_len": "782",
+          "frame.marked": "0",
+          "frame.ignored": "0",
+          "frame.protocols": "eth:ethertype:ip:tcp:http",
+          "frame.coloring_rule.name": "HTTP",
+          "frame.coloring_rule.string": "http || tcp.port == 80 || http2"
+        },
+        "eth": {
+          "eth.dst": "00:00:00:00:00:00",
+          "eth.dst_tree": {
+            "eth.dst_resolved": "00:00:00_00:00:00",
+            "eth.addr": "00:00:00:00:00:00",
+            "eth.addr_resolved": "00:00:00_00:00:00",
+            "eth.lg": "0",
+            "eth.ig": "0"
+          },
+          "eth.src": "00:00:00:00:00:00",
+          "eth.src_tree": {
+            "eth.src_resolved": "00:00:00_00:00:00",
+            "eth.addr": "00:00:00:00:00:00",
+            "eth.addr_resolved": "00:00:00_00:00:00",
+            "eth.lg": "0",
+            "eth.ig": "0"
+          },
+          "eth.type": "0x00000800"
+        },
+        "ip": {
+          "ip.version": "4",
+          "ip.hdr_len": "20",
+          "ip.dsfield": "0x00000000",
+          "ip.dsfield_tree": {
+            "ip.dsfield.dscp": "0",
+            "ip.dsfield.ecn": "0"
+          },
+          "ip.len": "768",
+          "ip.id": "0x00006999",
+          "ip.flags": "0x00000002",
+          "ip.flags_tree": {
+            "ip.flags.rb": "0",
+            "ip.flags.df": "1",
+            "ip.flags.mf": "0"
+          },
+          "ip.frag_offset": "0",
+          "ip.ttl": "64",
+          "ip.proto": "6",
+          "ip.checksum": "0x0000d05c",
+          "ip.checksum.status": "2",
+          "ip.src": "127.0.0.1",
+          "ip.addr": "127.0.0.1",
+          "ip.src_host": "127.0.0.1",
+          "ip.host": "127.0.0.1",
+          "ip.dst": "127.0.0.1",
+          "ip.addr": "127.0.0.1",
+          "ip.dst_host": "127.0.0.1",
+          "ip.host": "127.0.0.1",
+          "Source GeoIP: Unknown": "",
+          "Destination GeoIP: Unknown": ""
+        },
+        "tcp": {
+          "tcp.srcport": "36028",
+          "tcp.dstport": "80",
+          "tcp.port": "36028",
+          "tcp.port": "80",
+          "tcp.stream": "157",
+          "tcp.len": "716",
+          "tcp.seq": "1",
+          "tcp.nxtseq": "717",
+          "tcp.ack": "1",
+          "tcp.hdr_len": "32",
+          "tcp.flags": "0x00000018",
+          "tcp.flags_tree": {
+            "tcp.flags.res": "0",
+            "tcp.flags.ns": "0",
+            "tcp.flags.cwr": "0",
+            "tcp.flags.ecn": "0",
+            "tcp.flags.urg": "0",
+            "tcp.flags.ack": "1",
+            "tcp.flags.push": "1",
+            "tcp.flags.reset": "0",
+            "tcp.flags.syn": "0",
+            "tcp.flags.fin": "0",
+            "tcp.flags.str": "\u00c2\u00b7\u00c2\u00b7\u00c2\u00b7\u00c2\u00b7\u00c2\u00b7\u00c2\u00b7\u00c2\u00b7AP\u00c2\u00b7\u00c2\u00b7\u00c2\u00b7"
+          },
+          "tcp.window_size_value": "342",
+          "tcp.window_size": "43776",
+          "tcp.window_size_scalefactor": "128",
+          "tcp.checksum": "0x000000f5",
+          "tcp.checksum.status": "2",
+          "tcp.urgent_pointer": "0",
+          "tcp.options": "01:01:08:0a:da:b0:f2:0e:da:b0:f2:0e",
+          "tcp.options_tree": {
+            "No-Operation (NOP)": {
+              "tcp.options.type": "1",
+              "tcp.options.type_tree": {
+                "tcp.options.type.copy": "0",
+                "tcp.options.type.class": "0",
+                "tcp.options.type.number": "1"
+              }
+            },
+            "No-Operation (NOP)": {
+              "tcp.options.type": "1",
+              "tcp.options.type_tree": {
+                "tcp.options.type.copy": "0",
+                "tcp.options.type.class": "0",
+                "tcp.options.type.number": "1"
+              }
+            },
+            "Timestamps: TSval 3669029390, TSecr 3669029390": {
+              "tcp.option_kind": "8",
+              "tcp.option_len": "10",
+              "tcp.options.timestamp.tsval": "3669029390",
+              "tcp.options.timestamp.tsecr": "3669029390"
+            }
+          },
+          "tcp.analysis": {
+            "tcp.analysis.initial_rtt": "0.000019053",
+            "tcp.analysis.bytes_in_flight": "716",
+            "tcp.analysis.push_bytes_sent": "716"
+          }
+        },
+        "http": {
+          "GET \/sockjs-node\/801\/qt0k12mr\/websocket HTTP\/1.1\\r\\n": {
+            "_ws.expert": {
+              "http.chat": "",
+              "_ws.expert.message": "GET \/sockjs-node\/801\/qt0k12mr\/websocket HTTP\/1.1\\r\\n",
+              "_ws.expert.severity": "2097152",
+              "_ws.expert.group": "33554432"
+            },
+            "http.request.method": "GET",
+            "http.request.uri": "\/sockjs-node\/801\/qt0k12mr\/websocket",
+            "http.request.version": "HTTP\/1.1"
+          },
+          "http.host": "test.com",
+          "http.request.line": "Host: test.com\r\n",
+          "http.connection": "Upgrade",
+          "http.request.line": "Connection: Upgrade\r\n",
+          "http.request.line": "Pragma: no-cache\r\n",
+          "http.cache_control": "no-cache",
+          "http.request.line": "Cache-Control: no-cache\r\n",
+          "http.upgrade": "websocket",
+          "http.request.line": "Upgrade: websocket\r\n",
+          "http.request.line": "Origin: http:\/\/test.com\r\n",
+          "http.sec_websocket_version": "13",
+          "http.request.line": "Sec-WebSocket-Version: 13\r\n",
+          "http.user_agent": "Mozilla\/5.0 (X11; Linux x86_64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/61.0.3163.100 Safari\/537.36",
+          "http.request.line": "User-Agent: Mozilla\/5.0 (X11; Linux x86_64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/61.0.3163.100 Safari\/537.36\r\n",
+          "http.accept_encoding": "gzip, deflate",
+          "http.request.line": "Accept-Encoding: gzip, deflate\r\n",
+          "http.accept_language": "en-US,en;q=0.8",
+          "http.request.line": "Accept-Language: en-US,en;q=0.8\r\n",
+          "http.cookie": "intercom-id-n8ayu1h7=dae8b464-af34-422a-aec4-dd94cedb1330; CW-FirstTime=true; koa.sid=QE6NK3lGgTYw1wW5Fy1-LK9ZJLh7BFEf; koa.sid.sig=woV9r1s7EB6MmhYVpNz-Ln0kw-s",
+          "http.cookie_tree": {
+            "http.cookie_pair": "intercom-id-n8ayu1h7=dae8b464-af34-422a-aec4-dd94cedb1330",
+            "http.cookie_pair": "CW-FirstTime=true",
+            "http.cookie_pair": "koa.sid=QE6NK3lGgTYw1wW5Fy1-LK9ZJLh7BFEf",
+            "http.cookie_pair": "koa.sid.sig=woV9r1s7EB6MmhYVpNz-Ln0kw-s"
+          },
+          "http.request.line": "Cookie: intercom-id-n8ayu1h7=dae8b464-af34-422a-aec4-dd94cedb1330; CW-FirstTime=true; koa.sid=QE6NK3lGgTYw1wW5Fy1-LK9ZJLh7BFEf; koa.sid.sig=woV9r1s7EB6MmhYVpNz-Ln0kw-s\r\n",
+          "http.sec_websocket_key": "S\/DFq9jU0QTlUe6t8gCFOQ==",
+          "http.request.line": "Sec-WebSocket-Key: S\/DFq9jU0QTlUe6t8gCFOQ==\r\n",
+          "http.sec_websocket_extensions": "permessage-deflate; client_max_window_bits",
+          "http.request.line": "Sec-WebSocket-Extensions: permessage-deflate; client_max_window_bits\r\n",
+          "\\r\\n": "",
+          "http.request.full_uri": "http:\/\/test.com\/sockjs-node\/801\/qt0k12mr\/websocket",
+          "http.request": "1",
+          "http.request_number": "1",
+          "http.response_in": "1968"
+        }
+      }
+    }
+  }
+  ,
+  {
+    "_index": "packets-2017-09-26",
+    "_type": "pcap_file",
+    "_score": null,
+    "_source": {
+      "layers": {
+        "frame": {
+          "frame.interface_id": "0",
+          "frame.encap_type": "1",
+          "frame.time": "Sep 26, 2017 00:47:34.002691899 CEST",
+          "frame.offset_shift": "0.000000000",
+          "frame.time_epoch": "1506379654.002691899",
+          "frame.time_delta": "0.024374360",
+          "frame.time_delta_displayed": "0.025229100",
+          "frame.time_relative": "18.370176583",
+          "frame.number": "1973",
+          "frame.len": "725",
+          "frame.cap_len": "725",
+          "frame.marked": "0",
+          "frame.ignored": "0",
+          "frame.protocols": "eth:ethertype:ip:tcp:http",
+          "frame.coloring_rule.name": "HTTP",
+          "frame.coloring_rule.string": "http || tcp.port == 80 || http2"
+        },
+        "eth": {
+          "eth.dst": "00:00:00:00:00:00",
+          "eth.dst_tree": {
+            "eth.dst_resolved": "00:00:00_00:00:00",
+            "eth.addr": "00:00:00:00:00:00",
+            "eth.addr_resolved": "00:00:00_00:00:00",
+            "eth.lg": "0",
+            "eth.ig": "0"
+          },
+          "eth.src": "00:00:00:00:00:00",
+          "eth.src_tree": {
+            "eth.src_resolved": "00:00:00_00:00:00",
+            "eth.addr": "00:00:00:00:00:00",
+            "eth.addr_resolved": "00:00:00_00:00:00",
+            "eth.lg": "0",
+            "eth.ig": "0"
+          },
+          "eth.type": "0x00000800"
+        },
+        "ip": {
+          "ip.version": "4",
+          "ip.hdr_len": "20",
+          "ip.dsfield": "0x00000000",
+          "ip.dsfield_tree": {
+            "ip.dsfield.dscp": "0",
+            "ip.dsfield.ecn": "0"
+          },
+          "ip.len": "711",
+          "ip.id": "0x00000b05",
+          "ip.flags": "0x00000002",
+          "ip.flags_tree": {
+            "ip.flags.rb": "0",
+            "ip.flags.df": "1",
+            "ip.flags.mf": "0"
+          },
+          "ip.frag_offset": "0",
+          "ip.ttl": "64",
+          "ip.proto": "6",
+          "ip.checksum": "0x00002f2a",
+          "ip.checksum.status": "2",
+          "ip.src": "127.0.0.1",
+          "ip.addr": "127.0.0.1",
+          "ip.src_host": "127.0.0.1",
+          "ip.host": "127.0.0.1",
+          "ip.dst": "127.0.0.1",
+          "ip.addr": "127.0.0.1",
+          "ip.dst_host": "127.0.0.1",
+          "ip.host": "127.0.0.1",
+          "Source GeoIP: Unknown": "",
+          "Destination GeoIP: Unknown": ""
+        },
+        "tcp": {
+          "tcp.srcport": "35984",
+          "tcp.dstport": "80",
+          "tcp.port": "35984",
+          "tcp.port": "80",
+          "tcp.stream": "132",
+          "tcp.len": "659",
+          "tcp.seq": "2833",
+          "tcp.nxtseq": "3492",
+          "tcp.ack": "2458560",
+          "tcp.hdr_len": "32",
+          "tcp.flags": "0x00000018",
+          "tcp.flags_tree": {
+            "tcp.flags.res": "0",
+            "tcp.flags.ns": "0",
+            "tcp.flags.cwr": "0",
+            "tcp.flags.ecn": "0",
+            "tcp.flags.urg": "0",
+            "tcp.flags.ack": "1",
+            "tcp.flags.push": "1",
+            "tcp.flags.reset": "0",
+            "tcp.flags.syn": "0",
+            "tcp.flags.fin": "0",
+            "tcp.flags.str": "\u00c2\u00b7\u00c2\u00b7\u00c2\u00b7\u00c2\u00b7\u00c2\u00b7\u00c2\u00b7\u00c2\u00b7AP\u00c2\u00b7\u00c2\u00b7\u00c2\u00b7"
+          },
+          "tcp.window_size_value": "19446",
+          "tcp.window_size": "2489088",
+          "tcp.window_size_scalefactor": "128",
+          "tcp.checksum": "0x000000bc",
+          "tcp.checksum.status": "2",
+          "tcp.urgent_pointer": "0",
+          "tcp.options": "01:01:08:0a:da:b0:f2:15:da:b0:f1:ef",
+          "tcp.options_tree": {
+            "No-Operation (NOP)": {
+              "tcp.options.type": "1",
+              "tcp.options.type_tree": {
+                "tcp.options.type.copy": "0",
+                "tcp.options.type.class": "0",
+                "tcp.options.type.number": "1"
+              }
+            },
+            "No-Operation (NOP)": {
+              "tcp.options.type": "1",
+              "tcp.options.type_tree": {
+                "tcp.options.type.copy": "0",
+                "tcp.options.type.class": "0",
+                "tcp.options.type.number": "1"
+              }
+            },
+            "Timestamps: TSval 3669029397, TSecr 3669029359": {
+              "tcp.option_kind": "8",
+              "tcp.option_len": "10",
+              "tcp.options.timestamp.tsval": "3669029397",
+              "tcp.options.timestamp.tsecr": "3669029359"
+            }
+          },
+          "tcp.analysis": {
+            "tcp.analysis.initial_rtt": "0.000053847",
+            "tcp.analysis.bytes_in_flight": "659",
+            "tcp.analysis.push_bytes_sent": "659"
+          }
+        },
+        "http": {
+          "POST \/sockjs-node\/801\/pets5vfl\/xhr_streaming?t=1506379653998 HTTP\/1.1\\r\\n": {
+            "_ws.expert": {
+              "http.chat": "",
+              "_ws.expert.message": "POST \/sockjs-node\/801\/pets5vfl\/xhr_streaming?t=1506379653998 HTTP\/1.1\\r\\n",
+              "_ws.expert.severity": "2097152",
+              "_ws.expert.group": "33554432"
+            },
+            "http.request.method": "POST",
+            "http.request.uri": "\/sockjs-node\/801\/pets5vfl\/xhr_streaming?t=1506379653998",
+            "http.request.uri_tree": {
+              "http.request.uri.path": "\/sockjs-node\/801\/pets5vfl\/xhr_streaming",
+              "http.request.uri.query": "t=1506379653998",
+              "http.request.uri.query_tree": {
+                "http.request.uri.query.parameter": "t=1506379653998"
+              }
+            },
+            "http.request.version": "HTTP\/1.1"
+          },
+          "http.host": "test.com",
+          "http.request.line": "Host: test.com\r\n",
+          "http.connection": "keep-alive",
+          "http.request.line": "Connection: keep-alive\r\n",
+          "http.content_length_header": "0",
+          "http.content_length_header_tree": {
+            "http.content_length": "0"
+          },
+          "http.request.line": "Content-Length: 0\r\n",
+          "http.request.line": "Pragma: no-cache\r\n",
+          "http.cache_control": "no-cache",
+          "http.request.line": "Cache-Control: no-cache\r\n",
+          "http.request.line": "Origin: http:\/\/test.com\r\n",
+          "http.user_agent": "Mozilla\/5.0 (X11; Linux x86_64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/61.0.3163.100 Safari\/537.36",
+          "http.request.line": "User-Agent: Mozilla\/5.0 (X11; Linux x86_64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/61.0.3163.100 Safari\/537.36\r\n",
+          "http.accept": "*\/*",
+          "http.request.line": "Accept: *\/*\r\n",
+          "http.referer": "http:\/\/test.com\/",
+          "http.request.line": "Referer: http:\/\/test.com\/\r\n",
+          "http.accept_encoding": "gzip, deflate",
+          "http.request.line": "Accept-Encoding: gzip, deflate\r\n",
+          "http.accept_language": "en-US,en;q=0.8",
+          "http.request.line": "Accept-Language: en-US,en;q=0.8\r\n",
+          "http.cookie": "intercom-id-n8ayu1h7=dae8b464-af34-422a-aec4-dd94cedb1330; CW-FirstTime=true; koa.sid=QE6NK3lGgTYw1wW5Fy1-LK9ZJLh7BFEf; koa.sid.sig=woV9r1s7EB6MmhYVpNz-Ln0kw-s",
+          "http.cookie_tree": {
+            "http.cookie_pair": "intercom-id-n8ayu1h7=dae8b464-af34-422a-aec4-dd94cedb1330",
+            "http.cookie_pair": "CW-FirstTime=true",
+            "http.cookie_pair": "koa.sid=QE6NK3lGgTYw1wW5Fy1-LK9ZJLh7BFEf",
+            "http.cookie_pair": "koa.sid.sig=woV9r1s7EB6MmhYVpNz-Ln0kw-s"
+          },
+          "http.request.line": "Cookie: intercom-id-n8ayu1h7=dae8b464-af34-422a-aec4-dd94cedb1330; CW-FirstTime=true; koa.sid=QE6NK3lGgTYw1wW5Fy1-LK9ZJLh7BFEf; koa.sid.sig=woV9r1s7EB6MmhYVpNz-Ln0kw-s\r\n",
+          "\\r\\n": "",
+          "http.request.full_uri": "http:\/\/test.com\/sockjs-node\/801\/pets5vfl\/xhr_streaming?t=1506379653998",
+          "http.request": "1",
+          "http.request_number": "6",
+          "http.prev_request_in": "1937"
+        }
+      }
+    }
+  }
+  ,
+  {
+    "_index": "packets-2017-09-26",
+    "_type": "pcap_file",
+    "_score": null,
+    "_source": {
+      "layers": {
+        "frame": {
+          "frame.interface_id": "0",
+          "frame.encap_type": "1",
+          "frame.time": "Sep 26, 2017 00:48:16.861382076 CEST",
+          "frame.offset_shift": "0.000000000",
+          "frame.time_epoch": "1506379696.861382076",
+          "frame.time_delta": "0.000717355",
+          "frame.time_delta_displayed": "42.858690177",
+          "frame.time_relative": "61.228866760",
+          "frame.number": "4265",
+          "frame.len": "454",
+          "frame.cap_len": "454",
+          "frame.marked": "0",
+          "frame.ignored": "0",
+          "frame.protocols": "eth:ethertype:ip:tcp:http",
+          "frame.coloring_rule.name": "HTTP",
+          "frame.coloring_rule.string": "http || tcp.port == 80 || http2"
+        },
+        "eth": {
+          "eth.dst": "00:00:00:00:00:00",
+          "eth.dst_tree": {
+            "eth.dst_resolved": "00:00:00_00:00:00",
+            "eth.addr": "00:00:00:00:00:00",
+            "eth.addr_resolved": "00:00:00_00:00:00",
+            "eth.lg": "0",
+            "eth.ig": "0"
+          },
+          "eth.src": "00:00:00:00:00:00",
+          "eth.src_tree": {
+            "eth.src_resolved": "00:00:00_00:00:00",
+            "eth.addr": "00:00:00:00:00:00",
+            "eth.addr_resolved": "00:00:00_00:00:00",
+            "eth.lg": "0",
+            "eth.ig": "0"
+          },
+          "eth.type": "0x00000800"
+        },
+        "ip": {
+          "ip.version": "4",
+          "ip.hdr_len": "20",
+          "ip.dsfield": "0x00000000",
+          "ip.dsfield_tree": {
+            "ip.dsfield.dscp": "0",
+            "ip.dsfield.ecn": "0"
+          },
+          "ip.len": "440",
+          "ip.id": "0x00005809",
+          "ip.flags": "0x00000002",
+          "ip.flags_tree": {
+            "ip.flags.rb": "0",
+            "ip.flags.df": "1",
+            "ip.flags.mf": "0"
+          },
+          "ip.frag_offset": "0",
+          "ip.ttl": "64",
+          "ip.proto": "6",
+          "ip.checksum": "0x0000e334",
+          "ip.checksum.status": "2",
+          "ip.src": "127.0.0.1",
+          "ip.addr": "127.0.0.1",
+          "ip.src_host": "127.0.0.1",
+          "ip.host": "127.0.0.1",
+          "ip.dst": "127.0.0.1",
+          "ip.addr": "127.0.0.1",
+          "ip.dst_host": "127.0.0.1",
+          "ip.host": "127.0.0.1",
+          "Source GeoIP: Unknown": "",
+          "Destination GeoIP: Unknown": ""
+        },
+        "tcp": {
+          "tcp.srcport": "36384",
+          "tcp.dstport": "80",
+          "tcp.port": "36384",
+          "tcp.port": "80",
+          "tcp.stream": "329",
+          "tcp.len": "388",
+          "tcp.seq": "1",
+          "tcp.nxtseq": "389",
+          "tcp.ack": "1",
+          "tcp.hdr_len": "32",
+          "tcp.flags": "0x00000018",
+          "tcp.flags_tree": {
+            "tcp.flags.res": "0",
+            "tcp.flags.ns": "0",
+            "tcp.flags.cwr": "0",
+            "tcp.flags.ecn": "0",
+            "tcp.flags.urg": "0",
+            "tcp.flags.ack": "1",
+            "tcp.flags.push": "1",
+            "tcp.flags.reset": "0",
+            "tcp.flags.syn": "0",
+            "tcp.flags.fin": "0",
+            "tcp.flags.str": "\u00c2\u00b7\u00c2\u00b7\u00c2\u00b7\u00c2\u00b7\u00c2\u00b7\u00c2\u00b7\u00c2\u00b7AP\u00c2\u00b7\u00c2\u00b7\u00c2\u00b7"
+          },
+          "tcp.window_size_value": "342",
+          "tcp.window_size": "43776",
+          "tcp.window_size_scalefactor": "128",
+          "tcp.checksum": "0x0000ffac",
+          "tcp.checksum.status": "2",
+          "tcp.urgent_pointer": "0",
+          "tcp.options": "01:01:08:0a:da:b1:1b:ef:da:b1:1b:ef",
+          "tcp.options_tree": {
+            "No-Operation (NOP)": {
+              "tcp.options.type": "1",
+              "tcp.options.type_tree": {
+                "tcp.options.type.copy": "0",
+                "tcp.options.type.class": "0",
+                "tcp.options.type.number": "1"
+              }
+            },
+            "No-Operation (NOP)": {
+              "tcp.options.type": "1",
+              "tcp.options.type_tree": {
+                "tcp.options.type.copy": "0",
+                "tcp.options.type.class": "0",
+                "tcp.options.type.number": "1"
+              }
+            },
+            "Timestamps: TSval 3669040111, TSecr 3669040111": {
+              "tcp.option_kind": "8",
+              "tcp.option_len": "10",
+              "tcp.options.timestamp.tsval": "3669040111",
+              "tcp.options.timestamp.tsecr": "3669040111"
+            }
+          },
+          "tcp.analysis": {
+            "tcp.analysis.initial_rtt": "0.000032171",
+            "tcp.analysis.bytes_in_flight": "388",
+            "tcp.analysis.push_bytes_sent": "388"
+          }
+        },
+        "http": {
+          "GET \/static\/js\/bundle.js HTTP\/1.1\\r\\n": {
+            "_ws.expert": {
+              "http.chat": "",
+              "_ws.expert.message": "GET \/static\/js\/bundle.js HTTP\/1.1\\r\\n",
+              "_ws.expert.severity": "2097152",
+              "_ws.expert.group": "33554432"
+            },
+            "http.request.method": "GET",
+            "http.request.uri": "\/static\/js\/bundle.js",
+            "http.request.version": "HTTP\/1.1"
+          },
+          "http.host": "test.com",
+          "http.request.line": "Host: test.com\r\n",
+          "http.connection": "keep-alive",
+          "http.request.line": "Connection: keep-alive\r\n",
+          "http.request.line": "Pragma: no-cache\r\n",
+          "http.cache_control": "no-cache",
+          "http.request.line": "Cache-Control: no-cache\r\n",
+          "http.user_agent": "Mozilla\/5.0 (X11; Linux x86_64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/61.0.3163.100 Safari\/537.36",
+          "http.request.line": "User-Agent: Mozilla\/5.0 (X11; Linux x86_64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/61.0.3163.100 Safari\/537.36\r\n",
+          "http.accept": "*\/*",
+          "http.request.line": "Accept: *\/*\r\n",
+          "http.referer": "http:\/\/test.com\/",
+          "http.request.line": "Referer: http:\/\/test.com\/\r\n",
+          "http.accept_encoding": "gzip, deflate",
+          "http.request.line": "Accept-Encoding: gzip, deflate\r\n",
+          "http.accept_language": "en-US,en;q=0.8",
+          "http.request.line": "Accept-Language: en-US,en;q=0.8\r\n",
+          "\\r\\n": "",
+          "http.request.full_uri": "http:\/\/test.com\/static\/js\/bundle.js",
+          "http.request": "1",
+          "http.request_number": "1",
+          "http.response_in": "4577",
+          "http.next_request_in": "4580"
+        }
+      }
+    }
+  }
+  ,
+  {
+    "_index": "packets-2017-09-26",
+    "_type": "pcap_file",
+    "_score": null,
+    "_source": {
+      "layers": {
+        "frame": {
+          "frame.interface_id": "0",
+          "frame.encap_type": "1",
+          "frame.time": "Sep 26, 2017 00:48:16.877019513 CEST",
+          "frame.offset_shift": "0.000000000",
+          "frame.time_epoch": "1506379696.877019513",
+          "frame.time_delta": "0.015498031",
+          "frame.time_delta_displayed": "0.015637437",
+          "frame.time_relative": "61.244504197",
+          "frame.number": "4272",
+          "frame.len": "682",
+          "frame.cap_len": "682",
+          "frame.marked": "0",
+          "frame.ignored": "0",
+          "frame.protocols": "eth:ethertype:ip:tcp:http",
+          "frame.coloring_rule.name": "HTTP",
+          "frame.coloring_rule.string": "http || tcp.port == 80 || http2"
+        },
+        "eth": {
+          "eth.dst": "00:00:00:00:00:00",
+          "eth.dst_tree": {
+            "eth.dst_resolved": "00:00:00_00:00:00",
+            "eth.addr": "00:00:00:00:00:00",
+            "eth.addr_resolved": "00:00:00_00:00:00",
+            "eth.lg": "0",
+            "eth.ig": "0"
+          },
+          "eth.src": "00:00:00:00:00:00",
+          "eth.src_tree": {
+            "eth.src_resolved": "00:00:00_00:00:00",
+            "eth.addr": "00:00:00:00:00:00",
+            "eth.addr_resolved": "00:00:00_00:00:00",
+            "eth.lg": "0",
+            "eth.ig": "0"
+          },
+          "eth.type": "0x00000800"
+        },
+        "ip": {
+          "ip.version": "4",
+          "ip.hdr_len": "20",
+          "ip.dsfield": "0x00000000",
+          "ip.dsfield_tree": {
+            "ip.dsfield.dscp": "0",
+            "ip.dsfield.ecn": "0"
+          },
+          "ip.len": "668",
+          "ip.id": "0x00002d55",
+          "ip.flags": "0x00000002",
+          "ip.flags_tree": {
+            "ip.flags.rb": "0",
+            "ip.flags.df": "1",
+            "ip.flags.mf": "0"
+          },
+          "ip.frag_offset": "0",
+          "ip.ttl": "64",
+          "ip.proto": "6",
+          "ip.checksum": "0x00000d05",
+          "ip.checksum.status": "2",
+          "ip.src": "127.0.0.1",
+          "ip.addr": "127.0.0.1",
+          "ip.src_host": "127.0.0.1",
+          "ip.host": "127.0.0.1",
+          "ip.dst": "127.0.0.1",
+          "ip.addr": "127.0.0.1",
+          "ip.dst_host": "127.0.0.1",
+          "ip.host": "127.0.0.1",
+          "Source GeoIP: Unknown": "",
+          "Destination GeoIP: Unknown": ""
+        },
+        "tcp": {
+          "tcp.srcport": "35992",
+          "tcp.dstport": "80",
+          "tcp.port": "35992",
+          "tcp.port": "80",
+          "tcp.stream": "137",
+          "tcp.len": "616",
+          "tcp.seq": "1205",
+          "tcp.nxtseq": "1821",
+          "tcp.ack": "11353",
+          "tcp.hdr_len": "32",
+          "tcp.flags": "0x00000018",
+          "tcp.flags_tree": {
+            "tcp.flags.res": "0",
+            "tcp.flags.ns": "0",
+            "tcp.flags.cwr": "0",
+            "tcp.flags.ecn": "0",
+            "tcp.flags.urg": "0",
+            "tcp.flags.ack": "1",
+            "tcp.flags.push": "1",
+            "tcp.flags.reset": "0",
+            "tcp.flags.syn": "0",
+            "tcp.flags.fin": "0",
+            "tcp.flags.str": "\u00c2\u00b7\u00c2\u00b7\u00c2\u00b7\u00c2\u00b7\u00c2\u00b7\u00c2\u00b7\u00c2\u00b7AP\u00c2\u00b7\u00c2\u00b7\u00c2\u00b7"
+          },
+          "tcp.window_size_value": "2517",
+          "tcp.window_size": "322176",
+          "tcp.window_size_scalefactor": "128",
+          "tcp.checksum": "0x00000091",
+          "tcp.checksum.status": "2",
+          "tcp.urgent_pointer": "0",
+          "tcp.options": "01:01:08:0a:da:b1:1b:f3:da:b0:f1:bd",
+          "tcp.options_tree": {
+            "No-Operation (NOP)": {
+              "tcp.options.type": "1",
+              "tcp.options.type_tree": {
+                "tcp.options.type.copy": "0",
+                "tcp.options.type.class": "0",
+                "tcp.options.type.number": "1"
+              }
+            },
+            "No-Operation (NOP)": {
+              "tcp.options.type": "1",
+              "tcp.options.type_tree": {
+                "tcp.options.type.copy": "0",
+                "tcp.options.type.class": "0",
+                "tcp.options.type.number": "1"
+              }
+            },
+            "Timestamps: TSval 3669040115, TSecr 3669029309": {
+              "tcp.option_kind": "8",
+              "tcp.option_len": "10",
+              "tcp.options.timestamp.tsval": "3669040115",
+              "tcp.options.timestamp.tsecr": "3669029309"
+            }
+          },
+          "tcp.analysis": {
+            "tcp.analysis.initial_rtt": "0.000017360",
+            "tcp.analysis.bytes_in_flight": "616",
+            "tcp.analysis.push_bytes_sent": "616"
+          }
+        },
+        "http": {
+          "GET \/api\/v1\/mycw\/users\/email\/asdfadfs@adfadsfasdf.com HTTP\/1.1\\r\\n": {
+            "_ws.expert": {
+              "http.chat": "",
+              "_ws.expert.message": "GET \/api\/v1\/mycw\/users\/email\/asdfadfs@adfadsfasdf.com HTTP\/1.1\\r\\n",
+              "_ws.expert.severity": "2097152",
+              "_ws.expert.group": "33554432"
+            },
+            "http.request.method": "GET",
+            "http.request.uri": "\/api\/v1\/mycw\/users\/email\/asdfadfs@adfadsfasdf.com",
+            "http.request.version": "HTTP\/1.1"
+          },
+          "http.host": "test.com",
+          "http.request.line": "Host: test.com\r\n",
+          "http.connection": "keep-alive",
+          "http.request.line": "Connection: keep-alive\r\n",
+          "http.request.line": "Pragma: no-cache\r\n",
+          "http.cache_control": "no-cache",
+          "http.request.line": "Cache-Control: no-cache\r\n",
+          "http.accept": "application\/json, text\/plain, *\/*",
+          "http.request.line": "Accept: application\/json, text\/plain, *\/*\r\n",
+          "http.user_agent": "Mozilla\/5.0 (X11; Linux x86_64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/61.0.3163.100 Safari\/537.36",
+          "http.request.line": "User-Agent: Mozilla\/5.0 (X11; Linux x86_64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/61.0.3163.100 Safari\/537.36\r\n",
+          "http.referer": "http:\/\/test.com\/",
+          "http.request.line": "Referer: http:\/\/test.com\/\r\n",
+          "http.accept_encoding": "gzip, deflate",
+          "http.request.line": "Accept-Encoding: gzip, deflate\r\n",
+          "http.accept_language": "en-US,en;q=0.8",
+          "http.request.line": "Accept-Language: en-US,en;q=0.8\r\n",
+          "http.cookie": "intercom-id-n8ayu1h7=dae8b464-af34-422a-aec4-dd94cedb1330; CW-FirstTime=true; koa.sid=QE6NK3lGgTYw1wW5Fy1-LK9ZJLh7BFEf; koa.sid.sig=woV9r1s7EB6MmhYVpNz-Ln0kw-s",
+          "http.cookie_tree": {
+            "http.cookie_pair": "intercom-id-n8ayu1h7=dae8b464-af34-422a-aec4-dd94cedb1330",
+            "http.cookie_pair": "CW-FirstTime=true",
+            "http.cookie_pair": "koa.sid=QE6NK3lGgTYw1wW5Fy1-LK9ZJLh7BFEf",
+            "http.cookie_pair": "koa.sid.sig=woV9r1s7EB6MmhYVpNz-Ln0kw-s"
+          },
+          "http.request.line": "Cookie: intercom-id-n8ayu1h7=dae8b464-af34-422a-aec4-dd94cedb1330; CW-FirstTime=true; koa.sid=QE6NK3lGgTYw1wW5Fy1-LK9ZJLh7BFEf; koa.sid.sig=woV9r1s7EB6MmhYVpNz-Ln0kw-s\r\n",
+          "\\r\\n": "",
+          "http.request.full_uri": "http:\/\/test.com\/api\/v1\/mycw\/users\/email\/asdfadfs@adfadsfasdf.com",
+          "http.request": "1",
+          "http.request_number": "3",
+          "http.prev_request_in": "1694",
+          "http.response_in": "4482",
+          "http.next_request_in": "4514"
+        }
+      }
+    }
+  }
+  ,
+  {
+    "_index": "packets-2017-09-26",
+    "_type": "pcap_file",
+    "_score": null,
+    "_source": {
+      "layers": {
+        "frame": {
+          "frame.interface_id": "0",
+          "frame.encap_type": "1",
+          "frame.time": "Sep 26, 2017 00:48:17.071315289 CEST",
+          "frame.offset_shift": "0.000000000",
+          "frame.time_epoch": "1506379697.071315289",
+          "frame.time_delta": "0.000017888",
+          "frame.time_delta_displayed": "0.194295776",
+          "frame.time_relative": "61.438799973",
+          "frame.number": "4514",
+          "frame.len": "479",
+          "frame.cap_len": "479",
+          "frame.marked": "0",
+          "frame.ignored": "0",
+          "frame.protocols": "eth:ethertype:ip:tcp:http:json",
+          "frame.coloring_rule.name": "HTTP",
+          "frame.coloring_rule.string": "http || tcp.port == 80 || http2"
+        },
+        "eth": {
+          "eth.dst": "00:00:00:00:00:00",
+          "eth.dst_tree": {
+            "eth.dst_resolved": "00:00:00_00:00:00",
+            "eth.addr": "00:00:00:00:00:00",
+            "eth.addr_resolved": "00:00:00_00:00:00",
+            "eth.lg": "0",
+            "eth.ig": "0"
+          },
+          "eth.src": "00:00:00:00:00:00",
+          "eth.src_tree": {
+            "eth.src_resolved": "00:00:00_00:00:00",
+            "eth.addr": "00:00:00:00:00:00",
+            "eth.addr_resolved": "00:00:00_00:00:00",
+            "eth.lg": "0",
+            "eth.ig": "0"
+          },
+          "eth.type": "0x00000800"
+        },
+        "ip": {
+          "ip.version": "4",
+          "ip.hdr_len": "20",
+          "ip.dsfield": "0x00000000",
+          "ip.dsfield_tree": {
+            "ip.dsfield.dscp": "0",
+            "ip.dsfield.ecn": "0"
+          },
+          "ip.len": "465",
+          "ip.id": "0x00002d58",
+          "ip.flags": "0x00000002",
+          "ip.flags_tree": {
+            "ip.flags.rb": "0",
+            "ip.flags.df": "1",
+            "ip.flags.mf": "0"
+          },
+          "ip.frag_offset": "0",
+          "ip.ttl": "64",
+          "ip.proto": "6",
+          "ip.checksum": "0x00000dcd",
+          "ip.checksum.status": "2",
+          "ip.src": "127.0.0.1",
+          "ip.addr": "127.0.0.1",
+          "ip.src_host": "127.0.0.1",
+          "ip.host": "127.0.0.1",
+          "ip.dst": "127.0.0.1",
+          "ip.addr": "127.0.0.1",
+          "ip.dst_host": "127.0.0.1",
+          "ip.host": "127.0.0.1",
+          "Source GeoIP: Unknown": "",
+          "Destination GeoIP: Unknown": ""
+        },
+        "tcp": {
+          "tcp.srcport": "35992",
+          "tcp.dstport": "80",
+          "tcp.port": "35992",
+          "tcp.port": "80",
+          "tcp.stream": "137",
+          "tcp.len": "413",
+          "tcp.seq": "2516",
+          "tcp.nxtseq": "2929",
+          "tcp.ack": "11486",
+          "tcp.hdr_len": "32",
+          "tcp.flags": "0x00000018",
+          "tcp.flags_tree": {
+            "tcp.flags.res": "0",
+            "tcp.flags.ns": "0",
+            "tcp.flags.cwr": "0",
+            "tcp.flags.ecn": "0",
+            "tcp.flags.urg": "0",
+            "tcp.flags.ack": "1",
+            "tcp.flags.push": "1",
+            "tcp.flags.reset": "0",
+            "tcp.flags.syn": "0",
+            "tcp.flags.fin": "0",
+            "tcp.flags.str": "\u00c2\u00b7\u00c2\u00b7\u00c2\u00b7\u00c2\u00b7\u00c2\u00b7\u00c2\u00b7\u00c2\u00b7AP\u00c2\u00b7\u00c2\u00b7\u00c2\u00b7"
+          },
+          "tcp.window_size_value": "2517",
+          "tcp.window_size": "322176",
+          "tcp.window_size_scalefactor": "128",
+          "tcp.checksum": "0x0000ffc5",
+          "tcp.checksum.status": "2",
+          "tcp.urgent_pointer": "0",
+          "tcp.options": "01:01:08:0a:da:b1:1c:24:da:b1:1c:24",
+          "tcp.options_tree": {
+            "No-Operation (NOP)": {
+              "tcp.options.type": "1",
+              "tcp.options.type_tree": {
+                "tcp.options.type.copy": "0",
+                "tcp.options.type.class": "0",
+                "tcp.options.type.number": "1"
+              }
+            },
+            "No-Operation (NOP)": {
+              "tcp.options.type": "1",
+              "tcp.options.type_tree": {
+                "tcp.options.type.copy": "0",
+                "tcp.options.type.class": "0",
+                "tcp.options.type.number": "1"
+              }
+            },
+            "Timestamps: TSval 3669040164, TSecr 3669040164": {
+              "tcp.option_kind": "8",
+              "tcp.option_len": "10",
+              "tcp.options.timestamp.tsval": "3669040164",
+              "tcp.options.timestamp.tsecr": "3669040164"
+            }
+          },
+          "tcp.analysis": {
+            "tcp.analysis.initial_rtt": "0.000017360",
+            "tcp.analysis.bytes_in_flight": "413",
+            "tcp.analysis.push_bytes_sent": "413"
+          },
+          "tcp.segment_data": "7b:22:61:75:74:68:53:65:73:73:69:6f:6e:22:3a:7b:7d:2c:22:61:67:65:6e:63:79:22:3a:6e:75:6c:6c:2c:22:6d:61:78:53:74:65:70:22:3a:22:2f:63:6f:76:65:72:61:67:65:2d:6f:70:74:69:6f:6e:73:22:2c:22:50:72:6f:76:69:64:65:72:22:3a:5b:7b:22:50:72:6f:76:69:64:65:72:44:65:74:61:69:6c:22:3a:7b:22:41:70:70:6c:69:63:61:62:6c:65:46:72:6f:6d:44:61:74:65:22:3a:22:22:2c:22:50:72:6f:76:69:64:65:72:45:6d:61:69:6c:49:64:22:3a:22:61:73:64:66:61:64:66:73:40:61:64:66:61:64:73:66:61:73:64:66:2e:63:6f:6d:22:2c:22:50:72:6f:76:69:64:65:72:43:6c:61:73:73:22:3a:22:4f:70:74:6f:6d:65:74:72:69:73:74:22:2c:22:46:69:72:73:74:4e:61:6d:65:22:3a:6e:75:6c:6c:2c:22:4c:61:73:74:4e:61:6d:65:22:3a:6e:75:6c:6c:2c:22:4d:69:64:64:6c:65:49:6e:69:74:69:61:6c:22:3a:6e:75:6c:6c:7d:7d:5d:2c:22:54:72:61:6e:73:69:74:69:6f:6e:46:61:63:74:6f:72:22:3a:30:2c:22:45:66:66:65:63:74:69:76:65:44:61:74:65:22:3a:22:32:30:31:37:2d:30:39:2d:32:36:22:2c:22:46:6f:72:6d:53:74:61:74:75:73:22:3a:22:73:74:61:72:74:65:64:22:2c:22:50:6f:6c:69:63:79:54:79:70:65:22:3a:22:49:6e:64:69:76:69:64:75:61:6c:22:2c:22:5a:69:70:43:6f:64:65:22:3a:22:37:33:33:30:31:22:2c:22:43:69:74:79:22:3a:22:41:75:73:74:69:6e:22:2c:22:53:74:61:74:65:22:3a:22:54:58:22:2c:22:45:6e:74:69:74:79:4e:61:6d:65:22:3a:6e:75:6c:6c:7d"
+        },
+        "tcp.segments": {
+          "tcp.segment": "4512",
+          "tcp.segment": "4514",
+          "tcp.segment.count": "2",
+          "tcp.reassembled.length": "1108",
+          "tcp.reassembled.data": "50:4f:53:54:20:2f:61:70:69:2f:76:31:2f:71:75:6f:74:65:20:48:54:54:50:2f:31:2e:31:0d:0a:48:6f:73:74:3a:20:71:75:6f:74:65:73:2d:68:61:6e:6f:76:65:72:2e:63:6f:76:65:72:77:61:6c:6c:65:74:2e:64:65:76:0d:0a:43:6f:6e:6e:65:63:74:69:6f:6e:3a:20:6b:65:65:70:2d:61:6c:69:76:65:0d:0a:43:6f:6e:74:65:6e:74:2d:4c:65:6e:67:74:68:3a:20:34:31:33:0d:0a:50:72:61:67:6d:61:3a:20:6e:6f:2d:63:61:63:68:65:0d:0a:43:61:63:68:65:2d:43:6f:6e:74:72:6f:6c:3a:20:6e:6f:2d:63:61:63:68:65:0d:0a:41:63:63:65:70:74:3a:20:61:70:70:6c:69:63:61:74:69:6f:6e:2f:6a:73:6f:6e:2c:20:74:65:78:74:2f:70:6c:61:69:6e:2c:20:2a:2f:2a:0d:0a:4f:72:69:67:69:6e:3a:20:68:74:74:70:3a:2f:2f:71:75:6f:74:65:73:2d:68:61:6e:6f:76:65:72:2e:63:6f:76:65:72:77:61:6c:6c:65:74:2e:64:65:76:0d:0a:55:73:65:72:2d:41:67:65:6e:74:3a:20:4d:6f:7a:69:6c:6c:61:2f:35:2e:30:20:28:58:31:31:3b:20:4c:69:6e:75:78:20:78:38:36:5f:36:34:29:20:41:70:70:6c:65:57:65:62:4b:69:74:2f:35:33:37:2e:33:36:20:28:4b:48:54:4d:4c:2c:20:6c:69:6b:65:20:47:65:63:6b:6f:29:20:43:68:72:6f:6d:65:2f:36:31:2e:30:2e:33:31:36:33:2e:31:30:30:20:53:61:66:61:72:69:2f:35:33:37:2e:33:36:0d:0a:43:6f:6e:74:65:6e:74:2d:54:79:70:65:3a:20:61:70:70:6c:69:63:61:74:69:6f:6e:2f:6a:73:6f:6e:3b:63:68:61:72:73:65:74:3d:55:54:46:2d:38:0d:0a:52:65:66:65:72:65:72:3a:20:68:74:74:70:3a:2f:2f:71:75:6f:74:65:73:2d:68:61:6e:6f:76:65:72:2e:63:6f:76:65:72:77:61:6c:6c:65:74:2e:64:65:76:2f:0d:0a:41:63:63:65:70:74:2d:45:6e:63:6f:64:69:6e:67:3a:20:67:7a:69:70:2c:20:64:65:66:6c:61:74:65:0d:0a:41:63:63:65:70:74:2d:4c:61:6e:67:75:61:67:65:3a:20:65:6e:2d:55:53:2c:65:6e:3b:71:3d:30:2e:38:0d:0a:43:6f:6f:6b:69:65:3a:20:69:6e:74:65:72:63:6f:6d:2d:69:64:2d:6e:38:61:79:75:31:68:37:3d:64:61:65:38:62:34:36:34:2d:61:66:33:34:2d:34:32:32:61:2d:61:65:63:34:2d:64:64:39:34:63:65:64:62:31:33:33:30:3b:20:43:57:2d:46:69:72:73:74:54:69:6d:65:3d:74:72:75:65:3b:20:6b:6f:61:2e:73:69:64:3d:51:45:36:4e:4b:33:6c:47:67:54:59:77:31:77:57:35:46:79:31:2d:4c:4b:39:5a:4a:4c:68:37:42:46:45:66:3b:20:6b:6f:61:2e:73:69:64:2e:73:69:67:3d:77:6f:56:39:72:31:73:37:45:42:36:4d:6d:68:59:56:70:4e:7a:2d:4c:6e:30:6b:77:2d:73:0d:0a:0d:0a:7b:22:61:75:74:68:53:65:73:73:69:6f:6e:22:3a:7b:7d:2c:22:61:67:65:6e:63:79:22:3a:6e:75:6c:6c:2c:22:6d:61:78:53:74:65:70:22:3a:22:2f:63:6f:76:65:72:61:67:65:2d:6f:70:74:69:6f:6e:73:22:2c:22:50:72:6f:76:69:64:65:72:22:3a:5b:7b:22:50:72:6f:76:69:64:65:72:44:65:74:61:69:6c:22:3a:7b:22:41:70:70:6c:69:63:61:62:6c:65:46:72:6f:6d:44:61:74:65:22:3a:22:22:2c:22:50:72:6f:76:69:64:65:72:45:6d:61:69:6c:49:64:22:3a:22:61:73:64:66:61:64:66:73:40:61:64:66:61:64:73:66:61:73:64:66:2e:63:6f:6d:22:2c:22:50:72:6f:76:69:64:65:72:43:6c:61:73:73:22:3a:22:4f:70:74:6f:6d:65:74:72:69:73:74:22:2c:22:46:69:72:73:74:4e:61:6d:65:22:3a:6e:75:6c:6c:2c:22:4c:61:73:74:4e:61:6d:65:22:3a:6e:75:6c:6c:2c:22:4d:69:64:64:6c:65:49:6e:69:74:69:61:6c:22:3a:6e:75:6c:6c:7d:7d:5d:2c:22:54:72:61:6e:73:69:74:69:6f:6e:46:61:63:74:6f:72:22:3a:30:2c:22:45:66:66:65:63:74:69:76:65:44:61:74:65:22:3a:22:32:30:31:37:2d:30:39:2d:32:36:22:2c:22:46:6f:72:6d:53:74:61:74:75:73:22:3a:22:73:74:61:72:74:65:64:22:2c:22:50:6f:6c:69:63:79:54:79:70:65:22:3a:22:49:6e:64:69:76:69:64:75:61:6c:22:2c:22:5a:69:70:43:6f:64:65:22:3a:22:37:33:33:30:31:22:2c:22:43:69:74:79:22:3a:22:41:75:73:74:69:6e:22:2c:22:53:74:61:74:65:22:3a:22:54:58:22:2c:22:45:6e:74:69:74:79:4e:61:6d:65:22:3a:6e:75:6c:6c:7d"
+        },
+        "http": {
+          "POST \/api\/v1\/quote HTTP\/1.1\\r\\n": {
+            "_ws.expert": {
+              "http.chat": "",
+              "_ws.expert.message": "POST \/api\/v1\/quote HTTP\/1.1\\r\\n",
+              "_ws.expert.severity": "2097152",
+              "_ws.expert.group": "33554432"
+            },
+            "http.request.method": "POST",
+            "http.request.uri": "\/api\/v1\/quote",
+            "http.request.version": "HTTP\/1.1"
+          },
+          "http.host": "test.com",
+          "http.request.line": "Host: test.com\r\n",
+          "http.connection": "keep-alive",
+          "http.request.line": "Connection: keep-alive\r\n",
+          "http.content_length_header": "413",
+          "http.content_length_header_tree": {
+            "http.content_length": "413"
+          },
+          "http.request.line": "Content-Length: 413\r\n",
+          "http.request.line": "Pragma: no-cache\r\n",
+          "http.cache_control": "no-cache",
+          "http.request.line": "Cache-Control: no-cache\r\n",
+          "http.accept": "application\/json, text\/plain, *\/*",
+          "http.request.line": "Accept: application\/json, text\/plain, *\/*\r\n",
+          "http.request.line": "Origin: http:\/\/test.com\r\n",
+          "http.user_agent": "Mozilla\/5.0 (X11; Linux x86_64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/61.0.3163.100 Safari\/537.36",
+          "http.request.line": "User-Agent: Mozilla\/5.0 (X11; Linux x86_64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/61.0.3163.100 Safari\/537.36\r\n",
+          "http.content_type": "application\/json;charset=UTF-8",
+          "http.request.line": "Content-Type: application\/json;charset=UTF-8\r\n",
+          "http.referer": "http:\/\/test.com\/",
+          "http.request.line": "Referer: http:\/\/test.com\/\r\n",
+          "http.accept_encoding": "gzip, deflate",
+          "http.request.line": "Accept-Encoding: gzip, deflate\r\n",
+          "http.accept_language": "en-US,en;q=0.8",
+          "http.request.line": "Accept-Language: en-US,en;q=0.8\r\n",
+          "http.cookie": "intercom-id-n8ayu1h7=dae8b464-af34-422a-aec4-dd94cedb1330; CW-FirstTime=true; koa.sid=QE6NK3lGgTYw1wW5Fy1-LK9ZJLh7BFEf; koa.sid.sig=woV9r1s7EB6MmhYVpNz-Ln0kw-s",
+          "http.cookie_tree": {
+            "http.cookie_pair": "intercom-id-n8ayu1h7=dae8b464-af34-422a-aec4-dd94cedb1330",
+            "http.cookie_pair": "CW-FirstTime=true",
+            "http.cookie_pair": "koa.sid=QE6NK3lGgTYw1wW5Fy1-LK9ZJLh7BFEf",
+            "http.cookie_pair": "koa.sid.sig=woV9r1s7EB6MmhYVpNz-Ln0kw-s"
+          },
+          "http.request.line": "Cookie: intercom-id-n8ayu1h7=dae8b464-af34-422a-aec4-dd94cedb1330; CW-FirstTime=true; koa.sid=QE6NK3lGgTYw1wW5Fy1-LK9ZJLh7BFEf; koa.sid.sig=woV9r1s7EB6MmhYVpNz-Ln0kw-s\r\n",
+          "\\r\\n": "",
+          "http.request.full_uri": "http:\/\/test.com\/api\/v1\/quote",
+          "http.request": "1",
+          "http.request_number": "4",
+          "http.prev_request_in": "4272",
+          "http.response_in": "5148",
+          "http.file_data": "{\"authSession\":{},\"agency\":null,\"maxStep\":\"\/coverage-options\",\"Provider\":[{\"ProviderDetail\":{\"ApplicableFromDate\":\"\",\"ProviderEmailId\":\"asdfadfs@adfadsfasdf.com\",\"ProviderClass\":\"Optometrist\",\"FirstName\":null,\"LastName\":null,\"MiddleInitial\":null}}],\"TransitionFactor\":0,\"EffectiveDate\":\"2017-09-26\",\"FormStatus\":\"started\",\"PolicyType\":\"Individual\",\"ZipCode\":\"73301\",\"City\":\"Austin\",\"State\":\"TX\",\"EntityName\":null}"
+        },
+        "json": {
+          "json.object": {
+            "json.member": {
+              "json.object": "",
+              "json.key": "authSession"
+            },
+            "json.member": {
+              "json.value.null": "",
+              "json.key": "agency"
+            },
+            "json.member": {
+              "json.value.string": "\/coverage-options",
+              "json.key": "maxStep"
+            },
+            "json.member": {
+              "json.array": {
+                "json.object": {
+                  "json.member": {
+                    "json.object": {
+                      "json.member": {
+                        "json.value.string": "",
+                        "json.key": "ApplicableFromDate"
+                      },
+                      "json.member": {
+                        "json.value.string": "asdfadfs@adfadsfasdf.com",
+                        "json.key": "ProviderEmailId"
+                      },
+                      "json.member": {
+                        "json.value.string": "Optometrist",
+                        "json.key": "ProviderClass"
+                      },
+                      "json.member": {
+                        "json.value.null": "",
+                        "json.key": "FirstName"
+                      },
+                      "json.member": {
+                        "json.value.null": "",
+                        "json.key": "LastName"
+                      },
+                      "json.member": {
+                        "json.value.null": "",
+                        "json.key": "MiddleInitial"
+                      }
+                    },
+                    "json.key": "ProviderDetail"
+                  }
+                }
+              },
+              "json.key": "Provider"
+            },
+            "json.member": {
+              "json.value.number": "0",
+              "json.key": "TransitionFactor"
+            },
+            "json.member": {
+              "json.value.string": "2017-09-26",
+              "json.key": "EffectiveDate"
+            },
+            "json.member": {
+              "json.value.string": "started",
+              "json.key": "FormStatus"
+            },
+            "json.member": {
+              "json.value.string": "Individual",
+              "json.key": "PolicyType"
+            },
+            "json.member": {
+              "json.value.string": "73301",
+              "json.key": "ZipCode"
+            },
+            "json.member": {
+              "json.value.string": "Austin",
+              "json.key": "City"
+            },
+            "json.member": {
+              "json.value.string": "TX",
+              "json.key": "State"
+            },
+            "json.member": {
+              "json.value.null": "",
+              "json.key": "EntityName"
+            }
+          }
+        }
+      }
+    }
+  }
+  ,
+  {
+    "_index": "packets-2017-09-26",
+    "_type": "pcap_file",
+    "_score": null,
+    "_source": {
+      "layers": {
+        "frame": {
+          "frame.interface_id": "0",
+          "frame.encap_type": "1",
+          "frame.time": "Sep 26, 2017 00:48:17.179074602 CEST",
+          "frame.offset_shift": "0.000000000",
+          "frame.time_epoch": "1506379697.179074602",
+          "frame.time_delta": "0.023187012",
+          "frame.time_delta_displayed": "0.107759313",
+          "frame.time_relative": "61.546559286",
+          "frame.number": "4580",
+          "frame.len": "458",
+          "frame.cap_len": "458",
+          "frame.marked": "0",
+          "frame.ignored": "0",
+          "frame.protocols": "eth:ethertype:ip:tcp:http",
+          "frame.coloring_rule.name": "HTTP",
+          "frame.coloring_rule.string": "http || tcp.port == 80 || http2"
+        },
+        "eth": {
+          "eth.dst": "00:00:00:00:00:00",
+          "eth.dst_tree": {
+            "eth.dst_resolved": "00:00:00_00:00:00",
+            "eth.addr": "00:00:00:00:00:00",
+            "eth.addr_resolved": "00:00:00_00:00:00",
+            "eth.lg": "0",
+            "eth.ig": "0"
+          },
+          "eth.src": "00:00:00:00:00:00",
+          "eth.src_tree": {
+            "eth.src_resolved": "00:00:00_00:00:00",
+            "eth.addr": "00:00:00:00:00:00",
+            "eth.addr_resolved": "00:00:00_00:00:00",
+            "eth.lg": "0",
+            "eth.ig": "0"
+          },
+          "eth.type": "0x00000800"
+        },
+        "ip": {
+          "ip.version": "4",
+          "ip.hdr_len": "20",
+          "ip.dsfield": "0x00000000",
+          "ip.dsfield_tree": {
+            "ip.dsfield.dscp": "0",
+            "ip.dsfield.ecn": "0"
+          },
+          "ip.len": "444",
+          "ip.id": "0x0000583c",
+          "ip.flags": "0x00000002",
+          "ip.flags_tree": {
+            "ip.flags.rb": "0",
+            "ip.flags.df": "1",
+            "ip.flags.mf": "0"
+          },
+          "ip.frag_offset": "0",
+          "ip.ttl": "64",
+          "ip.proto": "6",
+          "ip.checksum": "0x0000e2fd",
+          "ip.checksum.status": "2",
+          "ip.src": "127.0.0.1",
+          "ip.addr": "127.0.0.1",
+          "ip.src_host": "127.0.0.1",
+          "ip.host": "127.0.0.1",
+          "ip.dst": "127.0.0.1",
+          "ip.addr": "127.0.0.1",
+          "ip.dst_host": "127.0.0.1",
+          "ip.host": "127.0.0.1",
+          "Source GeoIP: Unknown": "",
+          "Destination GeoIP: Unknown": ""
+        },
+        "tcp": {
+          "tcp.srcport": "36384",
+          "tcp.dstport": "80",
+          "tcp.port": "36384",
+          "tcp.port": "80",
+          "tcp.stream": "329",
+          "tcp.len": "392",
+          "tcp.seq": "389",
+          "tcp.nxtseq": "781",
+          "tcp.ack": "1206276",
+          "tcp.hdr_len": "32",
+          "tcp.flags": "0x00000018",
+          "tcp.flags_tree": {
+            "tcp.flags.res": "0",
+            "tcp.flags.ns": "0",
+            "tcp.flags.cwr": "0",
+            "tcp.flags.ecn": "0",
+            "tcp.flags.urg": "0",
+            "tcp.flags.ack": "1",
+            "tcp.flags.push": "1",
+            "tcp.flags.reset": "0",
+            "tcp.flags.syn": "0",
+            "tcp.flags.fin": "0",
+            "tcp.flags.str": "\u00c2\u00b7\u00c2\u00b7\u00c2\u00b7\u00c2\u00b7\u00c2\u00b7\u00c2\u00b7\u00c2\u00b7AP\u00c2\u00b7\u00c2\u00b7\u00c2\u00b7"
+          },
+          "tcp.window_size_value": "19446",
+          "tcp.window_size": "2489088",
+          "tcp.window_size_scalefactor": "128",
+          "tcp.checksum": "0x0000ffb0",
+          "tcp.checksum.status": "2",
+          "tcp.urgent_pointer": "0",
+          "tcp.options": "01:01:08:0a:da:b1:1c:3f:da:b1:1c:30",
+          "tcp.options_tree": {
+            "No-Operation (NOP)": {
+              "tcp.options.type": "1",
+              "tcp.options.type_tree": {
+                "tcp.options.type.copy": "0",
+                "tcp.options.type.class": "0",
+                "tcp.options.type.number": "1"
+              }
+            },
+            "No-Operation (NOP)": {
+              "tcp.options.type": "1",
+              "tcp.options.type_tree": {
+                "tcp.options.type.copy": "0",
+                "tcp.options.type.class": "0",
+                "tcp.options.type.number": "1"
+              }
+            },
+            "Timestamps: TSval 3669040191, TSecr 3669040176": {
+              "tcp.option_kind": "8",
+              "tcp.option_len": "10",
+              "tcp.options.timestamp.tsval": "3669040191",
+              "tcp.options.timestamp.tsecr": "3669040176"
+            }
+          },
+          "tcp.analysis": {
+            "tcp.analysis.initial_rtt": "0.000032171",
+            "tcp.analysis.bytes_in_flight": "392",
+            "tcp.analysis.push_bytes_sent": "392"
+          }
+        },
+        "http": {
+          "GET \/static\/js\/bundle.js.map HTTP\/1.1\\r\\n": {
+            "_ws.expert": {
+              "http.chat": "",
+              "_ws.expert.message": "GET \/static\/js\/bundle.js.map HTTP\/1.1\\r\\n",
+              "_ws.expert.severity": "2097152",
+              "_ws.expert.group": "33554432"
+            },
+            "http.request.method": "GET",
+            "http.request.uri": "\/static\/js\/bundle.js.map",
+            "http.request.version": "HTTP\/1.1"
+          },
+          "http.host": "test.com",
+          "http.request.line": "Host: test.com\r\n",
+          "http.connection": "keep-alive",
+          "http.request.line": "Connection: keep-alive\r\n",
+          "http.request.line": "Pragma: no-cache\r\n",
+          "http.cache_control": "no-cache",
+          "http.request.line": "Cache-Control: no-cache\r\n",
+          "http.user_agent": "Mozilla\/5.0 (X11; Linux x86_64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/61.0.3163.100 Safari\/537.36",
+          "http.request.line": "User-Agent: Mozilla\/5.0 (X11; Linux x86_64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/61.0.3163.100 Safari\/537.36\r\n",
+          "http.accept": "*\/*",
+          "http.request.line": "Accept: *\/*\r\n",
+          "http.referer": "http:\/\/test.com\/",
+          "http.request.line": "Referer: http:\/\/test.com\/\r\n",
+          "http.accept_encoding": "gzip, deflate",
+          "http.request.line": "Accept-Encoding: gzip, deflate\r\n",
+          "http.accept_language": "en-US,en;q=0.8",
+          "http.request.line": "Accept-Language: en-US,en;q=0.8\r\n",
+          "\\r\\n": "",
+          "http.request.full_uri": "http:\/\/test.com\/static\/js\/bundle.js.map",
+          "http.request": "1",
+          "http.request_number": "2",
+          "http.prev_request_in": "4265",
+          "http.response_in": "4954"
+        }
+      }
+    }
+  }
+]
